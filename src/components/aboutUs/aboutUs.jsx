@@ -6,21 +6,23 @@ import crypto from "../../images/cryptoImg.png";
 import newsBtc from "../../images/btcImg.png";
 import aboutImg from "../../images/usingPad.png";
 import "./aboutUs.css";
+import HowToBuy from "../toBuy/toBuy";
+import Tokenomics from "../tokenomics/tokenomics";
 
 export default function AboutUs() {
     return (
         <>
             <section className="aboutUs-section">
-                <div className="featured-block">
-                    <div className="featured-head">
-                        <div className="featured-lft-line"></div>
-                        <div className="featured-heading">
+                <Box className="featured-block">
+                    <Box className="section-head">
+                        <Box className="section-lft-line"></Box>
+                        <Box className="section-heading">
                             <Typography className="heading-grd" variant="h2">
                                 featured in
                             </Typography>
-                        </div>
-                        <div className="featured-rgt-line"></div>
-                    </div>
+                        </Box>
+                        <Box className="section-rgt-line"></Box>
+                    </Box>
 
                     <Container
                         disableGutters
@@ -30,7 +32,7 @@ export default function AboutUs() {
                             padding: '0 16px',
                         }}
                     >
-                        <div className="featured-logo-block">
+                        <Box className="featured-logo-block">
                             <ul className="featured-logo-list">
                                 <li className="featured-logo-list-item">
                                     <img src={cTele} alt="cTele" />
@@ -48,13 +50,13 @@ export default function AboutUs() {
                                     <img src={newsBtc} alt="newsBtc" />
                                 </li>
                             </ul>
-                        </div>
+                        </Box>
                     </Container>
-                </div>
+                </Box>
 
-                <div className="about-area">
+                <Box className="about-area">
                     <Container>
-                        <div className="about-flex-block">
+                        <Box className="about-flex-block">
                             <Box
                                 className="about-img-block"
                                 sx={{ display: 'flex', justifyContent: 'flex-start', width: '45%' }}
@@ -94,9 +96,11 @@ export default function AboutUs() {
                                     </Typography>
                                 </Box>
                             </Box>
-                        </div>
+                        </Box>
                     </Container>
-                </div>
+                </Box>
+                <HowToBuy/>
+                <Tokenomics/>
             </section>
         </>
     );

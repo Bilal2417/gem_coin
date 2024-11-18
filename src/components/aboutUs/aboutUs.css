@@ -8,26 +8,26 @@
 .featured-block{
 padding: 50px 0;
 } 
-.featured-head{
+.section-head{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 40px 0;
 }
-.featured-heading h2{
+.section-heading h2{
     font-family: "Metal Mania", system-ui;
     font-size: 4.2em;
 }
 
-.featured-lft-line,
-.featured-rgt-line{
+.section-lft-line,
+.section-rgt-line{
  width: 500px;
  height: 1px;
 }
-.featured-lft-line{
+.section-lft-line{
  background-image: linear-gradient(to left ,#28D5FF , #000000);
 }
-.featured-rgt-line{
+.section-rgt-line{
  background-image: linear-gradient(to right ,#28D5FF , #000000);
 }
 .heading-grd{
