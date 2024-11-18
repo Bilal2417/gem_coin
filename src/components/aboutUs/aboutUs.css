@@ -1,0 +1,86 @@
+.aboutUs-section{
+    background-image: url("../../images/starsBckImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-color: black;
+}
+.featured-block{
+padding: 50px 0;
+} 
+.featured-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px 0;
+}
+.featured-heading h2{
+    font-family: "Metal Mania", system-ui;
+    font-size: 4.2em;
+}
+
+.featured-lft-line,
+.featured-rgt-line{
+ width: 500px;
+ height: 1px;
+}
+.featured-lft-line{
+ background-image: linear-gradient(to left ,#28D5FF , #000000);
+}
+.featured-rgt-line{
+ background-image: linear-gradient(to right ,#28D5FF , #000000);
+}
+.heading-grd{
+    color: transparent;
+    background-image: linear-gradient(#BBE8FF , #0E5F88);
+    background-clip: text;
+}
+.featured-logo-list{
+    display: flex;
+    justify-content: space-between;
+}
+.featured-logo-list-item img {
+    filter: grayscale(100%)  invert(70%);
+}
+.about-area{
+    padding: 140px 0;
+}
+.about-flex-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-img-block{
+    display: flex;
+    justify-content: flex-start;
+    width: 45%;
+}
+.about-img-block img {
+    width: 75%;
+    transform: scale(1.5);
+}
+.about-content-block{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #fff;
+    gap: 30px;
+}
+.about-head{
+    background-image: linear-gradient(to right,#6bc8f7 , #000000);
+    opacity: 0.8;
+    text-align: left;
+}
+.about-heading{
+    font-family: "Metal Mania", system-ui;
+    font-size: 4.2em;
+    padding: 10px 35px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.about-text{
+    text-align: left;
+    color: #fff;
+    opacity: 0.9;
+}
