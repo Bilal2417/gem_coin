@@ -65,6 +65,7 @@ const GemMain = () => {
                 <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' 
                     ,      "&:hover": {
                             textDecoration: "underLine",  
+                            color : "white"
                           },
                 }}>
                   About
@@ -74,6 +75,7 @@ const GemMain = () => {
                 <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' 
                                       ,      "&:hover": {
                                         textDecoration: "underLine",  
+                                        color : "white"
                                       },
                 }}>
                   Features
@@ -83,6 +85,7 @@ const GemMain = () => {
                 <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' 
                                       ,      "&:hover": {
                                         textDecoration: "underLine",  
+                                        color : "white"
                                       },
                 }}>
                   Roadmap
@@ -92,6 +95,7 @@ const GemMain = () => {
                 <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' 
                                       ,      "&:hover": {
                                         textDecoration: "underLine",  
+                                        color : "white"
                                       },
                 }}>
                   Team
@@ -101,6 +105,7 @@ const GemMain = () => {
                 <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' 
                                       ,      "&:hover": {
                                         textDecoration: "underLine",  
+                                        color : "white"
                                       },
                 }}>
                   Presale
@@ -109,7 +114,8 @@ const GemMain = () => {
               <Box component="li">
                 <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' 
                                       ,      "&:hover": {
-                                        textDecoration: "underLine",  
+                                        textDecoration: "underLine", 
+                                        color : "white" 
                                       },
                 }}>
                   FAQs
