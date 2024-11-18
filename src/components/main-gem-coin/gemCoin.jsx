@@ -62,32 +62,56 @@ const GemMain = () => {
               }}
               >
               <Box component="li" sx={{ textTransform: 'uppercase' }}>
-                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' }}>
+                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' 
+                    ,      "&:hover": {
+                            textDecoration: "underLine",  
+                          },
+                }}>
                   About
                 </Typography>
               </Box>
               <Box component="li" sx={{ textTransform: 'uppercase' }}>
-                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' }}>
+                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' 
+                                      ,      "&:hover": {
+                                        textDecoration: "underLine",  
+                                      },
+                }}>
                   Features
                 </Typography>
               </Box>
               <Box component="li" sx={{ textTransform: 'uppercase' }}>
-                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' }}>
+                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' 
+                                      ,      "&:hover": {
+                                        textDecoration: "underLine",  
+                                      },
+                }}>
                   Roadmap
                 </Typography>
               </Box>
               <Box component="li" sx={{ textTransform: 'uppercase' }}>
-                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' }}>
+                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' 
+                                      ,      "&:hover": {
+                                        textDecoration: "underLine",  
+                                      },
+                }}>
                   Team
                 </Typography>
               </Box>
               <Box component="li" sx={{ textTransform: 'uppercase' }}>
-                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' }}>
+                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' 
+                                      ,      "&:hover": {
+                                        textDecoration: "underLine",  
+                                      },
+                }}>
                   Presale
                 </Typography>
               </Box>
               <Box component="li">
-                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' }}>
+                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' 
+                                      ,      "&:hover": {
+                                        textDecoration: "underLine",  
+                                      },
+                }}>
                   FAQs
                 </Typography>
               </Box>
