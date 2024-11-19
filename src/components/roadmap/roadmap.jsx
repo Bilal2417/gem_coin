@@ -3,7 +3,7 @@ import { Box , Container, Typography } from "@mui/material"
 
 export default function Roadmap () {
     return <>
-    <section className="roadmap-section">
+    <Box component="section" className="roadmap-section">
 
     <Container>
 <Box>
@@ -150,6 +150,6 @@ game gem coin ROADMAP
 
 </Box>
     </Container>
-    </section>
+    </Box>
     </>
 }

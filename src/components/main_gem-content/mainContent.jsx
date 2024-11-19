@@ -18,10 +18,24 @@ export default function MainContent() {
       <Box className="hero-section" sx={{ display: 'flex', alignItems: 'center' }}>
 
         <Box className="hero-block" sx={{ width: '50%', color: '#fff', display: 'flex', flexDirection: 'column', gap: '40px' }}>
-          <Typography variant="h2" className="primary-heading">
-            you want <span> game gem coin </span>
+          <Typography variant="h2" sx={{
+                fontFamily: "Metal Mania",
+                fontSize: "6.4em",
+                lineHeight: "84px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+          }}>
+            you want <span style={{    color: "#7ADBE5"}}> game gem coin </span>
           </Typography>
-          <Typography variant="body1" className="primary-text">
+          <Typography variant="body1" sx={{
+               fontFamily: "Marcellus SC",
+               fontSize: "18px",
+               fontWeight: "500",
+               lineHeight: "24px",
+               textAlign: "left",
+               width: "80%",
+          }}>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble
           </Typography>
 

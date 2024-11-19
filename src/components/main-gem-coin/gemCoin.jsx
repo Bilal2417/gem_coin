@@ -59,10 +59,11 @@ const GemMain = () => {
                 borderTop: '3px solid #fff',
                 borderBottom: '3px solid #fff',
                 boxShadow: '-15px 1px 20px #00C2AC',
+                fontFamily: "Marcellus SC" ,
               }}
               >
               <Box component="li" sx={{ textTransform: 'uppercase' }}>
-                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' 
+                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' ,  fontFamily: "Marcellus SC" 
                     ,      "&:hover": {
                             textDecoration: "underLine",  
                             color : "white"
@@ -72,7 +73,7 @@ const GemMain = () => {
                 </Typography>
               </Box>
               <Box component="li" sx={{ textTransform: 'uppercase' }}>
-                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' 
+                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' ,fontFamily: "Marcellus SC" 
                                       ,      "&:hover": {
                                         textDecoration: "underLine",  
                                         color : "white"
@@ -82,7 +83,7 @@ const GemMain = () => {
                 </Typography>
               </Box>
               <Box component="li" sx={{ textTransform: 'uppercase' }}>
-                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' 
+                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' ,fontFamily: "Marcellus SC"
                                       ,      "&:hover": {
                                         textDecoration: "underLine",  
                                         color : "white"
@@ -92,7 +93,7 @@ const GemMain = () => {
                 </Typography>
               </Box>
               <Box component="li" sx={{ textTransform: 'uppercase' }}>
-                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' 
+                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' ,fontFamily: "Marcellus SC"
                                       ,      "&:hover": {
                                         textDecoration: "underLine",  
                                         color : "white"
@@ -102,7 +103,7 @@ const GemMain = () => {
                 </Typography>
               </Box>
               <Box component="li" sx={{ textTransform: 'uppercase' }}>
-                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' 
+                <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' ,fontFamily: "Marcellus SC"
                                       ,      "&:hover": {
                                         textDecoration: "underLine",  
                                         color : "white"

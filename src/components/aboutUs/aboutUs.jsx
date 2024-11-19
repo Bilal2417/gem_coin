@@ -12,7 +12,7 @@ import Tokenomics from "../tokenomics/tokenomics";
 export default function AboutUs() {
     return (
         <>
-            <section className="aboutUs-section">
+            <Box component="section" className="aboutUs-section">
 
 
                 <Box className="featured-block">
@@ -102,7 +102,7 @@ export default function AboutUs() {
                     </Container>
                 </Box>
                                         
-            </section>
+            </Box>
         </>
     );
 }

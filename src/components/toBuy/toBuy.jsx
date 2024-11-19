@@ -4,7 +4,7 @@ import buyImg from "../../images/buy1stImg.png"
 import buy3Img from "../../images/buy3rdImg.png"
 export default function HowToBuy () {
     return <>
-    <section className="buy-section">
+    <Box component="section" className="buy-section">
         <Container
              disableGutters
              sx={{
@@ -97,6 +97,6 @@ export default function HowToBuy () {
 </Container>
                                 </Box>
                                                                       </Container>
-                                                                      </section>
+                                                                      </Box>
     </>
 }
