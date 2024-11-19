@@ -21,75 +21,132 @@ game gem coin ROADMAP
 </Box>
 </Box>
 
-<div className="roadmap-content">
+<Box className="roadmap-content">
 
-    <div className="roadmap-content-block content-block-1st">
-        <div className="roadmap-head-block">
+    <Box className="roadmap-content-block content-block-1st">
+        <Box className="roadmap-head-block">
 
-        <div className="tertiary-heading-block">
-            <h3 className="tertiary-heading sml-font">phase 1</h3>
-        </div>
-        <div className="roadmap-style-block"></div>
-    </div>
+        <Box className="tertiary-heading-block">
+            <Typography
+            sx={{
+                fontSize: "1.5em",
+                padding: "4px 36px",
+                fontFamily: "Metal Mania",
+                color: "#fff",
+                textTransform: "uppercase",
+            }} variant="h3">phase 1</Typography>
+        </Box>
+        <Box className="roadmap-style-block"></Box>
+    </Box>
 
-    <div className="tertiary-text-block">
-        <p className="tertiary-text txt-fnt">
+    <Box className="tertiary-text-block">
+    <Typography variant="body1" sx={{
+            fontFamily: "Inter",
+            padding: "30px 0 30px 60px",
+            width: "90%",
+            lineHeight: "28px",
+                textAlign: "left",
+                color: "#fff",
+                opacity: "0.9",
+        }}>
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem 
-        </p>
-        </div>
-        </div>
+        </Typography>
+        </Box>
+        </Box>
 
-        <div className="roadmap-content-block content-block-2nd">
-        <div className="roadmap-head-block mrg-lft">
+        <Box className="roadmap-content-block content-block-2nd">
+        <Box className="roadmap-head-block mrg-lft">
 
-        <div className="tertiary-heading-block">
-            <h3 className="tertiary-heading sml-font">phase 2</h3>
-        </div>
-        <div className="roadmap-style-block"></div>
-    </div>
+        <Box className="tertiary-heading-block">
+            <Typography variant="h3"             sx={{
+                fontSize: "1.5em",
+                padding: "4px 36px",
+                fontFamily: "Metal Mania",
+                color: "#fff",
+                textTransform: "uppercase",
+            }} >phase 2</Typography>
+        </Box>
+        <Box className="roadmap-style-block"></Box>
+    </Box>
 
-    <div className="tertiary-text-block">
-        <p className="tertiary-text txt-fnt">
+    <Box className="tertiary-text-block">
+    <Typography variant="body1" sx={{
+            fontFamily: "Inter",
+            padding: "30px 0 30px 60px",
+            width: "90%",
+            lineHeight: "28px",
+                textAlign: "left",
+                color: "#fff",
+                opacity: "0.9",
+        }}>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem 
-        </p>
-        </div>
-        </div>
+        </Typography>
+        </Box>
+        </Box>
 
-        <div className="roadmap-content-block content-block-3rd">
-        <div className="roadmap-head-block bfr-line">
+        <Box className="roadmap-content-block content-block-3rd">
+        <Box className="roadmap-head-block bfr-line">
 
-        <div className="tertiary-heading-block">
-            <h3 className="tertiary-heading sml-font">phase 3</h3>
-        </div>
-        <div className="roadmap-style-block"></div>
-    </div>
+        <Box className="tertiary-heading-block">
+            <Typography             sx={{
+                fontSize: "1.5em",
+                padding: "4px 36px",
+                fontFamily: "Metal Mania",
+                color: "#fff",
+                textTransform: "uppercase",
+            }}  variant="h3">phase 3</Typography>
+        </Box>
+        <Box className="roadmap-style-block"></Box>
+    </Box>
 
-    <div className="tertiary-text-block">
-        <p className="tertiary-text txt-fnt">
+    <Box className="tertiary-text-block">
+    <Typography variant="body1" sx={{
+            fontFamily: "Inter",
+            padding: "30px 0 30px 60px",
+            width: "90%",
+            lineHeight: "28px",
+                textAlign: "left",
+                color: "#fff",
+                opacity: "0.9",
+        }}>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem 
-        </p>
-        </div>
-        </div>
+        </Typography>
+        </Box>
+        </Box>
 
-        <div className="roadmap-content-block content-block-4th">
-        <div className="roadmap-head-block mrg-lft">
+        <Box className="roadmap-content-block content-block-4th">
+        <Box className="roadmap-head-block mrg-lft">
 
-        <div className="tertiary-heading-block">
-            <h3 className="tertiary-heading sml-font">phase 4</h3>
-        </div>
-        <div className="roadmap-style-block"></div>
-    </div>
+        <Box className="tertiary-heading-block">
+            <Typography variant="h3"             sx={{
+                fontSize: "1.5em",
+                padding: "4px 36px",
+                fontFamily: "Metal Mania",
+                color: "#fff",
+                textTransform: "uppercase",
+            }} >phase 4</Typography>
+        </Box>
+        <Box className="roadmap-style-block"></Box>
+    </Box>
 
-    <div className="tertiary-text-block">
-        <p className="tertiary-text txt-fnt">
+    <Box className="tertiary-text-block">
+        <Typography variant="body1" sx={{
+            fontFamily: "Inter",
+            padding: "30px 0 30px 60px",
+            width: "90%",
+            lineHeight: "28px",
+                textAlign: "left",
+                color: "#fff",
+                opacity: "0.9",
+        }}>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem 
-        </p>
-        </div>
-        </div>
+        </Typography>
+        </Box>
+        </Box>
 
-<div className="roadmap-content-block content-block-5th"></div>
+<Box className="roadmap-content-block content-block-5th"></Box>
 
-</div>
+</Box>
 
 </Box>
     </Container>
