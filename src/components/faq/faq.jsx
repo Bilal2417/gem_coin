@@ -24,13 +24,15 @@ game gem coin faq
 <Box className="section-line"></Box>
 </Box>
 </Box>
+
       <Accordion className="faq-accord"
       sx={{
         color: "#fff" ,
         backgroundImage: "linear-gradient(#537b8f , #264352) ",
         padding: "10px 20px",
-                        marginBottom : "10px"
-                        , borderRadius : "12px"
+                        marginBottom : "10px",
+                     borderRadius : "12px",
+                     opacity : "0.7"
       }}>
         <AccordionSummary
           expandIcon={<ArrowDownwardIcon />}
@@ -59,7 +61,8 @@ game gem coin faq
                 backgroundImage: "linear-gradient(#537b8f , #264352) ",
                 padding: "10px 20px",
                                 marginBottom : "10px"
-                                , borderRadius : "12px"
+                                , borderRadius : "12px",
+                     opacity : "0.7"
               }}>
         <AccordionSummary
           expandIcon={<ArrowDownwardIcon />}
@@ -70,7 +73,8 @@ game gem coin faq
           <Typography
           sx={{
             fontFamily : "Metal Mania",
-            fontSize : "20px" ,
+            fontSize : "20px" 
+            , opacity : "1"
           }}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
           </Typography>
@@ -89,7 +93,8 @@ game gem coin faq
                 backgroundImage: "linear-gradient(#537b8f , #264352) ",
                 padding: "10px 20px",
                                 marginBottom : "10px"
-                                , borderRadius : "12px"
+                                , borderRadius : "12px",
+                     opacity : "0.7"
               }}>
         <AccordionSummary
           expandIcon={<ArrowDownwardIcon />}
@@ -118,7 +123,8 @@ game gem coin faq
                 backgroundImage: "linear-gradient(#537b8f , #264352) ",
                 padding: "10px 20px",
                 marginBottom : "10px"
-                , borderRadius : "12px"
+                , borderRadius : "12px",
+                     opacity : "0.7"
               }}>
         <AccordionSummary
           expandIcon={<ArrowDownwardIcon />}

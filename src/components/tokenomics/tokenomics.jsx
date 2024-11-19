@@ -1,5 +1,5 @@
 import "./tokenomics.css"
-import { Box , Container, Typography } from "@mui/material"
+import { Box , Container, Grid ,Grid2, Typography } from "@mui/material"
 import chartUpperImg from "../../images/tokenImg.png"
 import tokenImg from "../../images/usingPadMain.png"
 
@@ -24,17 +24,17 @@ export default function Tokenomics () {
                                margin: '0 auto',
                                padding: '0 16px',
                            }}className="token-content">
-                        <Box className="token-area">
+                        <Grid2 justifyContent={"center"} className="token-area">
 
-<Box className="tokenChartBlock">
+<Grid justifyContent={"center"} className="tokenChartBlock">
     <Box className="tokenChart">
     <img src={chartUpperImg} />
     </Box>
-</Box>
+</Grid>
 <Box className="tokenImgBlock">
     <img src={tokenImg}/>
 </Box>
-                        </Box>
+                        </Grid2>
                     </Container>
     </Box>
     </>
