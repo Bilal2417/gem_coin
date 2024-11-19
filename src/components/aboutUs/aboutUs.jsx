@@ -13,10 +13,12 @@ export default function AboutUs() {
     return (
         <>
             <section className="aboutUs-section">
+
+
                 <Box className="featured-block">
                     <Box className="section-head">
                         <Box className="section-lft-line"></Box>
-                        <Box className="section-heading">
+                        <Box className="secondary-heading-block">
                             <Typography className="heading-grd" variant="h2">
                                 featured in
                             </Typography>
@@ -31,7 +33,7 @@ export default function AboutUs() {
                             margin: '0 auto',
                             padding: '0 16px',
                         }}
-                    >
+                        >
                         <Box className="featured-logo-block">
                             <ul className="featured-logo-list">
                                 <li className="featured-logo-list-item">
@@ -60,7 +62,7 @@ export default function AboutUs() {
                             <Box
                                 className="about-img-block"
                                 sx={{ display: 'flex', justifyContent: 'flex-start', width: '45%' }}
-                            >
+                                >
                                 <img src={aboutImg} alt="about us" style={{ width: '75%', transform: 'scale(1.5)' }} />
                             </Box>
 
@@ -75,20 +77,20 @@ export default function AboutUs() {
                                     gap: '30px',
                                 }}
                             >
-                                <Box className="about-head" sx={{ backgroundImage: 'linear-gradient(to right, #6bc8f7 , #000000)', opacity: 0.8, textAlign: 'left' }}>
+                                <Box className="tertiary-head-block" sx={{ backgroundImage: 'linear-gradient(to right, #6bc8f7 , #000000)', opacity: 0.8, textAlign: 'left' }}>
                                     <Typography sx={{
-                                            fontFamily: "Metal Mania",
-                                            fontSize: "3.8em" ,
-                                    }} className="about-heading" variant="h3">
+                                        fontFamily: "Metal Mania",
+                                        fontSize: "3.8em" ,
+                                    }} className="tertiary-heading" variant="h3">
                                         about us
                                     </Typography>
                                 </Box>
 
-                                <Box className="about-text-block">
+                                <Box className="tertiary-text-block">
                                     <Typography sx={{
-                                            fontFamily: "Montserrat" ,
-                                            fontWeight: "400px",
-                                    }} className="about-text" variant="body1">
+                                        fontFamily: "Montserrat" ,
+                                        fontWeight: "400px",
+                                    }} className="tertiary-text" variant="body1">
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                                         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -99,8 +101,7 @@ export default function AboutUs() {
                         </Box>
                     </Container>
                 </Box>
-                <HowToBuy/>
-                <Tokenomics/>
+                                        
             </section>
         </>
     );

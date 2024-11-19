@@ -1,8 +1,10 @@
-.aboutUs-section{
+.aboutUs-section,
+.buy-section,
+.token-block,
+.roadmap-section{
     background-image: url("../../images/starsBckImg.png");
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
     background-color: black;
 }
 .featured-block{
@@ -14,14 +16,14 @@ padding: 50px 0;
     justify-content: space-evenly;
     padding: 40px 0;
 }
-.section-heading h2{
+.secondary-heading-block h2{
     font-family: "Metal Mania", system-ui;
     font-size: 4.2em;
 }
 
 .section-lft-line,
 .section-rgt-line{
- width: 500px;
+ width: 400px;
  height: 1px;
 }
 .section-lft-line{
@@ -67,19 +69,19 @@ padding: 50px 0;
     color: #fff;
     gap: 30px;
 }
-.about-head{
+.tertiary-head-block{
     background-image: linear-gradient(to right,#6bc8f7 , #000000);
     opacity: 0.8;
     text-align: left;
 }
-.about-heading{
+.tertiary-heading{
     font-family: "Metal Mania", system-ui;
     font-size: 4.2em;
     padding: 10px 35px;
     color: #fff;
     text-transform: uppercase;
 }
-.about-text{
+.tertiary-text{
     text-align: left;
     color: #fff;
     opacity: 0.9;

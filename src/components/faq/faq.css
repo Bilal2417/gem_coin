@@ -1,0 +1,21 @@
+#faq-section{
+background-image: url("../../images/faq.png");
+background-size: cover;
+background-repeat: no-repeat;
+min-height: 100vh;
+}
+.fnt-sml{
+    
+    font-size: 3.8em;
+}
+.section-lineLeft,
+.section-line{
+ width: 300px;
+ height: 1px;
+}
+.section-lineLeft{
+ background-image: linear-gradient(to left ,#28D5FF , #000000);
+}
+.section-line{
+ background-image: linear-gradient(to right ,#28D5FF , #000000);
+}

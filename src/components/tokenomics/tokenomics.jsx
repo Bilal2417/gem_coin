@@ -9,7 +9,7 @@ export default function Tokenomics () {
 
                             <Box className="section-head">
                         <Box className="section-lft-line"></Box>
-                        <Box className="section-heading">
+                        <Box className="secondary-heading-block">
                             <Typography className="heading-grd" variant="h2">
                                 tokenomics
                             </Typography>
@@ -17,7 +17,13 @@ export default function Tokenomics () {
                         <Box className="section-rgt-line"></Box>
                     </Box>
 
-                    <Container className="token-content">
+                    <Container 
+                           disableGutters
+                           sx={{
+                               maxWidth: '1500px !important',
+                               margin: '0 auto',
+                               padding: '0 16px',
+                           }}className="token-content">
                         <Box className="token-area">
 
 <Box className="tokenChartBlock">

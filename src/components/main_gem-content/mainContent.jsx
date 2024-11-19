@@ -1,4 +1,4 @@
-import { Container, Box, Button } from "@mui/material";
+import { Container, Box, Button, Typography } from "@mui/material";
 import gemOnPad from "../../images/container-main-image.png";
 import btnBckImg from "../../images/btnBck.png";
 import Vector55 from "../../images/Vector55.png";
@@ -15,15 +15,15 @@ export default function MainContent() {
         padding: '0 16px',
       }}
     >
-      <Box className="main-block" sx={{ display: 'flex', alignItems: 'center' }}>
+      <Box className="hero-section" sx={{ display: 'flex', alignItems: 'center' }}>
 
-        <Box className="main-content-block" sx={{ width: '50%', color: '#fff', display: 'flex', flexDirection: 'column', gap: '40px' }}>
-          <h2 className="main-content-heading">
+        <Box className="hero-block" sx={{ width: '50%', color: '#fff', display: 'flex', flexDirection: 'column', gap: '40px' }}>
+          <Typography variant="h2" className="primary-heading">
             you want <span> game gem coin </span>
-          </h2>
-          <p className="main-content-desc">
+          </Typography>
+          <Typography variant="body1" className="primary-text">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble
-          </p>
+          </Typography>
 
           <Box sx={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '180px', height: '80px' }}>
             <Box
@@ -81,7 +81,7 @@ export default function MainContent() {
           </Box>
         </Box>
 
-        <Box className="main-img-block" sx={{ width: '50%', position: 'relative' }}>
+        <Box className="hero-img-block" sx={{ width: '50%', position: 'relative' }}>
           <img src={gemOnPad} alt="Gem Coin" />
         </Box>
       </Box>

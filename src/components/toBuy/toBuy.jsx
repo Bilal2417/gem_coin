@@ -4,11 +4,21 @@ import buyImg from "../../images/buy1stImg.png"
 import buy3Img from "../../images/buy3rdImg.png"
 export default function HowToBuy () {
     return <>
-    <Box sx={{    padding: "50px 0",  margin: "100px 0",}} className="buy-block">
+    <section className="buy-section">
+        <Container
+             disableGutters
+             sx={{
+                 maxWidth: '1500px !important',
+                 margin: '0 auto',
+                 padding: '0 16px',
+             }}>
+
+
+    <Box sx={{    padding: "50px 0 100px",}} className="buy-block">
 
                         <Box className="section-head">
                         <Box className="section-lft-line"></Box>
-                        <Box className="section-heading">
+                        <Box className="secondary-heading-block">
                             <Typography className="heading-grd" variant="h2">
                                 how to buy
                             </Typography>
@@ -21,7 +31,6 @@ export default function HowToBuy () {
                         </Box>
                         <Box className="section-rgt-line"></Box>
                     </Box>
-
 <Container
                         disableGutters
                         sx={{
@@ -30,7 +39,8 @@ export default function HowToBuy () {
                             marginTop : "100px",
                             padding: '0 16px',
                         }}
-                         className="buy-content-part">
+                        className="buy-content-part">
+
 
                     <Box className="buy-content-block">
                         <Box className="buy-img-block">
@@ -38,9 +48,9 @@ export default function HowToBuy () {
                         </Box>
                         
                         <Box className="buy-text-block">
-                            <Box className="buy-text-head">
+                            <Box className="quaternary-head-block">
                                 <Typography  sx={{    fontSize: "2.2rem",
-                                                                      fontFamily: "Metal Mania"}}  variant="h3" className="buy-text-heading heading-grd">connect your wallet</Typography>
+                                                                      fontFamily: "Metal Mania"}}  variant="h3" className="quaternary-heading heading-grd">connect your wallet</Typography>
                             </Box>
                             <Box className="text-block">
                                 <Typography variant="body1" className="buy-text">
@@ -86,5 +96,7 @@ export default function HowToBuy () {
                     </Box>
 </Container>
                                 </Box>
+                                                                      </Container>
+                                                                      </section>
     </>
 }
