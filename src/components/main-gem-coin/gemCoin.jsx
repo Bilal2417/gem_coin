@@ -5,6 +5,7 @@ import mainBackImg from "../../images/main-back-img.png";
 import btnBckImg from "../../images/btnBck.png";
 import Vector55 from "../../images/Vector55.png";
 import Vector58 from "../../images/Vector58.png";
+import heroBtn from "../../images/hero-btn.png"
 import MainContent from '../main_gem-content/mainContent';
 
 
@@ -135,23 +136,13 @@ const GemMain = () => {
               height: '80px',
             }}
             >
-            <Box
-              sx={{
-                content: '""',
-                backgroundImage: `url(${btnBckImg})`,
-                backgroundSize: 'contain',
-                backgroundRepeat: 'no-repeat',
-                width: '200px',
-                height: '100%',
-                position: 'absolute',
-                top: 0,
-              }}
-              />
             <Button
               sx={{
                 fontSize: '28px',
                 fontFamily: '"Metal Mania", system-ui',
-                backgroundImage: 'linear-gradient(#80D4FF, #034161)',
+                backgroundImage: `url(${heroBtn})`,
+                backgroundSize : "contain",
+                backgroundRepeat : "no-repeat",
                 padding: '8px 22px',
                 position: 'relative',
                 zIndex: 1,
@@ -159,33 +150,7 @@ const GemMain = () => {
                 color: '#fff',
               }}
               >
-              <Box
-                sx={{
-                  content: '""',
-                  backgroundImage: `url(${Vector55})`,
-                  width: '25px',
-                  height: '25px',
-                  position: 'absolute',
-                  left: '-5px',
-                  top: '50%',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundSize: 'contain',
-                }}
-                />
               Buy Now
-              <Box
-                sx={{
-                  content: '""',
-                  backgroundImage: `url(${Vector58})`,
-                  width: '20px',
-                  height: '20px',
-                  position: 'absolute',
-                  left: '50%',
-                  top: '-5px',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundSize: 'contain',
-                }}
-                />
             </Button>
           </Box>
         </Box>
