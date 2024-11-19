@@ -7,6 +7,7 @@ import Vector55 from "../../images/Vector55.png";
 import Vector58 from "../../images/Vector58.png";
 import heroBtn from "../../images/hero-btn.png"
 import MainContent from '../main_gem-content/mainContent';
+import "./gemCoin.css"
 
 
 const GemMain = () => {
@@ -47,7 +48,7 @@ const GemMain = () => {
             <img src={headerLogo} alt="game gem coin img" style={{ width: '120%', position: 'relative' }} />
           </Box>
 
-          <Box sx={{ color: '#fff', fontFamily: '"Marcellus SC", serif', fontWeight: 400, width: '600px' , marginLeft : "-50px"}}>
+          <Box className="bck-img" sx={{ color: '#fff', fontFamily: '"Marcellus SC", serif', fontWeight: 400, width: '650px' , marginLeft : "-50px" , position : "relative"}}>
             <Box
               component="ul"
               sx={{
