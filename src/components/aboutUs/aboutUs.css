@@ -46,6 +46,8 @@ padding: 50px 0;
 }
 .about-area{
     padding: 140px 0;
+    position: relative;
+    max-width: 100vw;
 }
 .about-flex-block{
     display: flex;
@@ -85,4 +87,31 @@ padding: 50px 0;
     text-align: left;
     color: #fff;
     opacity: 0.9;
+}
+
+.about-flex-block{
+    position: relative;
+}
+.about-area::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-image: url("../../images/about_upper.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-area::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-image: url("../../images/about_lower.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
