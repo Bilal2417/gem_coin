@@ -23,7 +23,8 @@ const GemMain = () => {
         backgroundImage: `url(${mainBackImg})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        paddingBottom : "100px"
+        paddingBottom : "100px",
+        display : "none"
       }}
       >
       <Container
@@ -45,7 +46,7 @@ const GemMain = () => {
                 alignItems:" center",
                 justifyContent : "right",
               }}>
-            <img src={headerLogo} alt="game gem coin img" style={{ width: '120%', position: 'relative' }} />
+            <img src={headerLogo} alt="game gem coin img" style={{ width: '120%', position: 'relative' , zIndex : '1'}} />
           </Box>
 
           <Box className="bck-img" sx={{ color: '#fff', fontFamily: '"Marcellus SC", serif', fontWeight: 400, width: '650px' , marginLeft : "-50px" , position : "relative"}}>

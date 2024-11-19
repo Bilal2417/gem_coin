@@ -1,4 +1,4 @@
-import { Container, Box, Button, Typography } from "@mui/material";
+import { Container, Box, Button, Typography, Grid } from "@mui/material";
 import gemOnPad from "../../images/container-main-image.png";
 import btnBckImg from "../../images/btnBck.png";
 import Vector55 from "../../images/Vector55.png";
@@ -14,9 +14,9 @@ export default function MainContent() {
         padding: '0 16px',
       }}
     >
-      <Box  sx={{ display: 'flex', alignItems: 'center' }}>
+      <Grid container >
 
-        <Box className="hero-block" sx={{ width: '50%', color: '#fff', display: 'flex', flexDirection: 'column', gap: '40px' }}>
+        <Grid item xs={12} sm={6}  className="hero-block" sx={{ width: '50%', color: '#fff', display: 'flex', flexDirection: 'column', gap: '40px' }}>
           <Typography variant="h2" sx={{
                 fontFamily: "Metal Mania",
                 fontSize: "6.4em",
@@ -92,17 +92,17 @@ export default function MainContent() {
               />
             </Button>
           </Box>
-        </Box>
+        </Grid>
 
 
-<Box sx={{width : "50%" , position : "relative"}} className="hero-img-block-bck">
+<Grid item xs={12} sm={6} sx={{width : "50%" , position : "relative"}} className="hero-img-block-bck">
 
         <Box className="hero-img-block" sx={{ width: '100%', position: 'relative' }}>
           <img src={gemOnPad} alt="Gem Coin" />
         </Box>
-</Box>
+</Grid>
         
-      </Box>
+      </Grid>
     </Container>
   );
 }

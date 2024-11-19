@@ -6,11 +6,8 @@
     justify-content: space-around;
 }
 .buy-content-block{
-    display: flex;
-    flex-direction: column;
     align-items: center;
     border: 2px solid #80D4FF;
-    width: 450px;
     position: relative;
     border-top-left-radius: 40px;
     border-bottom-right-radius: 50px;
@@ -57,7 +54,7 @@
 }
 .buy-text-block{
     padding: 15px 0 35px;
-    width: 70%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     gap: 10px;

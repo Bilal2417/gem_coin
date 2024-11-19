@@ -1,7 +1,7 @@
-import "./toBuy.css"
-import { Box , Container, Typography } from "@mui/material"
+import { Box , Container, Typography , Grid} from "@mui/material"
 import buyImg from "../../images/buy1stImg.png"
 import buy3Img from "../../images/buy3rdImg.png"
+import "./toBuy.css"
 export default function HowToBuy () {
     return <>
     <Box component="section" className="buy-section">
@@ -19,7 +19,7 @@ export default function HowToBuy () {
                         <Box className="section-head">
                         <Box className="section-lft-line"></Box>
                         <Box className="secondary-heading-block">
-                            <Typography className="heading-grd" variant="h2">
+                            <Typography className="heading-grd" variant="h2" sx={{'@media(max-width:1120px )' : {    lineHeight: "52px",}}}>
                                 how to buy
                             </Typography>
                             <Typography sx={{    fontFamily: "Montserrat",
@@ -31,18 +31,19 @@ export default function HowToBuy () {
                         </Box>
                         <Box className="section-rgt-line"></Box>
                     </Box>
+
 <Container
                         disableGutters
                         sx={{
-                            maxWidth: '1500px !important',
                             margin: '0 auto',
                             marginTop : "100px",
                             padding: '0 16px',
-                        }}
-                        className="buy-content-part">
+                        }}>
 
 
-                    <Box className="buy-content-block">
+<Grid container spacing={2} sx={{"@media(max-width:590px)":{justifyContent: "center" , gap : "50px"}}}>
+
+                    <Grid item xs={12} sm={6} md={4} lg={4} className="buy-content-block" sx={{display : "flex" , flexDirection : "column" , maxWidth : "360px"}}>
                         <Box className="buy-img-block">
                             <img src={buyImg}/>
                         </Box>
@@ -53,14 +54,14 @@ export default function HowToBuy () {
                                                                       fontFamily: "Metal Mania"}}  variant="h3" className="quaternary-heading heading-grd">connect your wallet</Typography>
                             </Box>
                             <Box className="text-block">
-                                <Typography variant="body1" className="buy-text">
+                                <Typography variant="body1" className="buy-text" sx={{ fontSize: "0.8em", lineHeight: "18px"}}>
                                 Click on „Connect Wallet“ and open your decentralized wallet to verify! Make sure you are on the Ethereum Network and have some ETH for fees ready.
                                 </Typography>
                             </Box>
                         </Box>
-                    </Box>
+                    </Grid>
 
-                    <Box className="buy-content-block">
+                    <Grid item xs={12} sm={6} md={4} lg={4} className="buy-content-block" sx={{display : "flex" , flexDirection : "column", maxWidth : "360px"}}>
                         <Box className="buy-img-block">
                             <img src={buyImg}/>
                         </Box>
@@ -71,13 +72,14 @@ export default function HowToBuy () {
                                                                       fontFamily: "Metal Mania"}}  variant="h3" className="buy-text-heading heading-grd">Enter the amount</Typography>
                             </Box>
                             <Box className="text-block">
-                                <Typography variant="body1" className="buy-text">
+                                <Typography variant="body1" className="buy-text" sx={{ fontSize: "0.8em", lineHeight: "18px"}}>
                                 Either enter the amount of you wish to receive or the amount of USDT or ETH you want to spend.
                                 </Typography>
                             </Box>
                         </Box>
-                    </Box>
-                    <Box className="buy-content-block">
+                    </Grid>
+
+                    <Grid item xs={12} sm={6} md={4} lg={4} className="buy-content-block" sx={{display : "flex" , flexDirection : "column", maxWidth : "360px"}}>
                         <Box className="buy-img-block">
                             <img src={buy3Img}/>
                         </Box>
@@ -88,12 +90,13 @@ export default function HowToBuy () {
                                                                       fontFamily: "Metal Mania"}} variant="h3" className="buy-text-heading heading-grd">Confirm and Go</Typography>
                             </Box>
                             <Box className="text-block">
-                                <Typography variant="body1" className="buy-text">
+                                <Typography variant="body1" className="buy-text"  sx={{ fontSize: "0.8em", lineHeight: "18px"}}>
                                 Now click on „Confirm“ and verify the transaction inside your wallet! Now wait for the presale to finish and come again to claim your account.
                                 </Typography>
                             </Box>
                         </Box>
-                    </Box>
+                    </Grid>
+                                                                      </Grid>
 </Container>
                                 </Box>
                                                                       </Container>

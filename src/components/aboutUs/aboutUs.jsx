@@ -1,4 +1,4 @@
-import { Container, Box, Typography } from "@mui/material";
+import { Container, Box, Typography , Grid } from "@mui/material";
 import cTele from "../../images/coinImg.png";
 import beIn from "../../images/beInImg.png";
 import cDesk from "../../images/coinDeskImg.png";
@@ -6,9 +6,8 @@ import crypto from "../../images/cryptoImg.png";
 import newsBtc from "../../images/btcImg.png";
 import aboutImg from "../../images/usingPad.png";
 import "./aboutUs.css";
-import HowToBuy from "../toBuy/toBuy";
-import Tokenomics from "../tokenomics/tokenomics";
 import Marquee from "react-fast-marquee";
+import { Image } from "@mui/icons-material";
 
 export default function AboutUs() {
     return (
@@ -62,15 +61,16 @@ export default function AboutUs() {
 
                 <Box className="about-area">
                     <Container>
-                        <Box className="about-flex-block">
-                            <Box
+                        <Grid container spacing={2} alignItems="center">
+                            <Grid  item xs={12} sm={6}
                                 className="about-img-block"
                                 sx={{ display: 'flex', justifyContent: 'flex-start', width: '45%' }}
                                 >
-                                <img src={aboutImg} alt="about us" style={{ width: '75%', transform: 'scale(1.5)' }} />
-                            </Box>
+                                <img src={aboutImg} alt="about us" sx={{ width: '75%', transform: 'scale(1.5)' ,
+                                }} />
+                            </Grid>
 
-                            <Box
+                            <Grid  item xs={12} sm={6}
                                 className="about-content-block"
                                 sx={{
                                     width: '45%',
@@ -84,7 +84,9 @@ export default function AboutUs() {
                                 <Box className="tertiary-head-block" sx={{ backgroundImage: 'linear-gradient(to right, #6bc8f7 , #000000)', opacity: 0.8, textAlign: 'left' }}>
                                     <Typography sx={{
                                         fontFamily: "Metal Mania",
-                                        fontSize: "3.8em" ,
+                                        '@media(max-width : 1200px )' :{
+                                            fontSize : "3em"
+                                        }
                                     }} className="tertiary-heading" variant="h3">
                                         about us
                                     </Typography>
@@ -94,6 +96,11 @@ export default function AboutUs() {
                                     <Typography sx={{
                                         fontFamily: "Montserrat" ,
                                         fontWeight: "400px",
+                                        padding: "10px 20px",
+                                        '@media(max-width : 1200px )' :{
+                                            fontSize : "0.8em",
+                                            lineHeight : "18px"
+                                        }
                                     }} className="tertiary-text" variant="body1">
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -101,8 +108,8 @@ export default function AboutUs() {
                                         Lorem Ipsum is simply dummy text.
                                     </Typography>
                                 </Box>
-                            </Box>
-                        </Box>
+                            </Grid>
+                        </Grid>
                     </Container>
                 </Box>
                                         
