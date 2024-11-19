@@ -8,6 +8,7 @@ import aboutImg from "../../images/usingPad.png";
 import "./aboutUs.css";
 import HowToBuy from "../toBuy/toBuy";
 import Tokenomics from "../tokenomics/tokenomics";
+import Marquee from "react-fast-marquee";
 
 export default function AboutUs() {
     return (
@@ -35,23 +36,26 @@ export default function AboutUs() {
                         }}
                         >
                         <Box className="featured-logo-block">
-                            <ul className="featured-logo-list">
-                                <li className="featured-logo-list-item">
+                            <Marquee pauseOnHover>
+
+                            <Box component="ul" className="featured-logo-list">
+                                <Box component="li" className="featured-logo-list-item">
                                     <img src={cTele} alt="cTele" />
-                                </li>
-                                <li className="featured-logo-list-item">
+                                </Box>
+                                <Box component="li" className="featured-logo-list-item">
                                     <img src={beIn} alt="beIn" />
-                                </li>
-                                <li className="featured-logo-list-item">
+                                </Box>
+                                <Box component="li" className="featured-logo-list-item">
                                     <img src={cDesk} alt="cDesk" />
-                                </li>
-                                <li className="featured-logo-list-item">
+                                </Box>
+                                <Box component="li" className="featured-logo-list-item">
                                     <img src={crypto} alt="crypto" />
-                                </li>
-                                <li className="featured-logo-list-item">
+                                </Box>
+                                <Box component="li" sx={{marginRight : "100px",}} className="featured-logo-list-item mrg-rgt">
                                     <img src={newsBtc} alt="newsBtc" />
-                                </li>
-                            </ul>
+                                </Box>
+                            </Box>
+                            </Marquee>
                         </Box>
                     </Container>
                 </Box>

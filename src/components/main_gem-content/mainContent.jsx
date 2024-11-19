@@ -10,12 +10,11 @@ export default function MainContent() {
     <Container
       disableGutters
       sx={{
-        maxWidth: '1400px !important',
         margin: '0 auto',
         padding: '0 16px',
       }}
     >
-      <Box className="hero-section" sx={{ display: 'flex', alignItems: 'center' }}>
+      <Box  sx={{ display: 'flex', alignItems: 'center' }}>
 
         <Box className="hero-block" sx={{ width: '50%', color: '#fff', display: 'flex', flexDirection: 'column', gap: '40px' }}>
           <Typography variant="h2" sx={{
@@ -95,9 +94,14 @@ export default function MainContent() {
           </Box>
         </Box>
 
-        <Box className="hero-img-block" sx={{ width: '50%', position: 'relative' }}>
+
+<Box sx={{width : "50%" , position : "relative"}} className="hero-img-block-bck">
+
+        <Box className="hero-img-block" sx={{ width: '100%', position: 'relative' }}>
           <img src={gemOnPad} alt="Gem Coin" />
         </Box>
+</Box>
+        
       </Box>
     </Container>
   );

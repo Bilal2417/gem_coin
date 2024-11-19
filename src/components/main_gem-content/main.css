@@ -67,3 +67,12 @@
     z-index: 1;
     transform: scale(0.9);
 }
+.hero-img-block-bck::before{
+    content : "";
+    background-color: #fff;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+bottom: 0;
+right: 50%;
+}

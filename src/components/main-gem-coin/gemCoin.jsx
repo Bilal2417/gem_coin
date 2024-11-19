@@ -16,18 +16,17 @@ const GemMain = () => {
     //   });
   return (
 
-    <Box
+    <Box component="section"
       sx={{
         backgroundImage: `url(${mainBackImg})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        minHeight: '128vh',
+        paddingBottom : "100px"
       }}
       >
       <Container
       disableGutters
       sx={{
-        maxWidth: '1400px !important',
         margin: '0 auto',  
         padding: '0 16px',  
       }}>
@@ -38,8 +37,8 @@ const GemMain = () => {
             alignItems:" center"
           }}>
           <Box sx={{ width: '180px', height: '180px' ,
-                width: "180px",
-                height: "180px",
+                width: "150px",
+                height: "150px",
                 display: "flex ",
                 alignItems:" center",
                 justifyContent : "right",
@@ -47,14 +46,14 @@ const GemMain = () => {
             <img src={headerLogo} alt="game gem coin img" style={{ width: '120%', position: 'relative' }} />
           </Box>
 
-          <Box sx={{ color: '#fff', fontFamily: '"Marcellus SC", serif', fontWeight: 400, width: '700px' , marginLeft : "-50px"}}>
+          <Box sx={{ color: '#fff', fontFamily: '"Marcellus SC", serif', fontWeight: 400, width: '600px' , marginLeft : "-50px"}}>
             <Box
               component="ul"
               sx={{
                 listStyle: 'none',
                 display: 'flex',
                 justifyContent: 'center',
-                gap: '40px',
+                gap: '30px',
                 padding: '20px 0',
                 borderTop: '3px solid #fff',
                 borderBottom: '3px solid #fff',

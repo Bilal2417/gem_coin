@@ -39,7 +39,7 @@ padding: 50px 0;
 }
 .featured-logo-list{
     display: flex;
-    justify-content: space-between;
+    gap: 100px;
 }
 .featured-logo-list-item img {
     filter: grayscale(100%)  invert(70%);
