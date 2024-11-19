@@ -26,11 +26,11 @@ export default function Tokenomics () {
                            }}className="token-content">
                         <Grid2 justifyContent={"center"} className="token-area">
 
-<Grid justifyContent={"center"} className="tokenChartBlock">
+<Box sx={{display : "flex" , justifyContent : "center"}} className="tokenChartBlock">
     <Box className="tokenChart">
     <img src={chartUpperImg} />
     </Box>
-</Grid>
+</Box>
 <Box className="tokenImgBlock">
     <img src={tokenImg}/>
 </Box>
