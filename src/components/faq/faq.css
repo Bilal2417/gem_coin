@@ -2,7 +2,7 @@
 background-image: url("../../images/footerImg.png");
 background-size: cover;
 background-repeat: no-repeat;
-min-height: 100vh;
+padding: 100px 0;
 background-color: #000000;
 }
 .fnt-sml{
@@ -19,4 +19,9 @@ background-color: #000000;
 }
 .section-line{
  background-image: linear-gradient(to right ,#28D5FF , #000000);
+}
+@media ( max-width : 500px){
+    #faq-section{
+        padding: 100px 0 50px;
+    }
 }

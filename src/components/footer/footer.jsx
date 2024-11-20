@@ -19,8 +19,11 @@ export default function Footer () {
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
 backgroundColor : "#000",
-padding : "100px 0"
+padding : "50px 0",
+'@media(max-width : 500px)':{
+  padding : "0 0 30px",
 
+}
     }}>
 
     <Container >
