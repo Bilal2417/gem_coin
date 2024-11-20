@@ -1,5 +1,6 @@
 import "./roadmap.css"
 import { Box , Container, Typography } from "@mui/material"
+import ufoImg from "../../images/rdmap-ufo.png"
 
 export default function Roadmap () {
     return <>
@@ -12,7 +13,25 @@ export default function Roadmap () {
 }}}>
 
         <Box className="roadmap-block">
-
+<Box sx={{ width : "100%" , height : "300px" ,
+    "@media ( max-width : 1100px )" :{
+        height : "250px"
+    },
+    "@media ( max-width : 900px )" :{
+        height : "200px"
+    },
+    "@media ( max-width : 750px )" :{
+        height : "150px"
+    },
+    "@media ( max-width : 600px )" :{
+        height : "100px"
+    },
+    "@media ( max-width : 500px )" :{
+        height : "50px"
+    },
+}}>
+    <img className="ufo_img" src={ufoImg}></img>
+</Box>
 <Box className="section-head">
 <Box sx={{width:"300px",
                                            '@media (max-width:950px)':{
@@ -32,6 +51,13 @@ export default function Roadmap () {
                                  },
                                  '@media(max-width:720px )' : {
                                  fontSize : "2.6em",
+                                 },
+                                 '@media(max-width:520px )' : {
+                                 fontSize : "2.2em",
+                                 },
+                                 '@media(max-width:400px )' : {
+                                 fontSize : "1.6em",
+                                 lineHeight : "30px"
                                  }}}>
 game gem coin ROADMAP
 </Typography>
@@ -45,6 +71,7 @@ game gem coin ROADMAP
                                             },
                                         }}  className="section-rgt-line"></Box>
 </Box>
+
 </Box>
 
 <Box className="roadmap-content">

@@ -20,7 +20,10 @@ const GemMain = () => {
         backgroundImage: `url(${mainBackImg})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        paddingBottom : "100px",
+        paddingBottom : "250px",
+        "@media ( max-width : 900px )" :{
+          paddingBottom : "0px",
+        }
       }}
       >
       <Container

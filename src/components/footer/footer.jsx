@@ -18,7 +18,6 @@ export default function Footer () {
         backgroundImage :  `url(${footerImg})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-minHeight : "100vh",
 backgroundColor : "#000",
 padding : "100px 0"
 

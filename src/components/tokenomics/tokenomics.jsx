@@ -43,7 +43,7 @@ export default function Tokenomics () {
                                         }}  className="section-rgt-line"></Box>
                     </Box>
 
-                        <Grid container spacing={2} justifyContent={"center"}>
+                        <Grid container spacing={2} justifyContent={"center"} sx={{gap : "100px"}}>
 
 <Grid item xs={12} md={6} sx={{display : "flex" , justifyContent : "center"}} className="tokenChartBlock">
     <Box sx={{
