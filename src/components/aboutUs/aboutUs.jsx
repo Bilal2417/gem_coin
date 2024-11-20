@@ -140,7 +140,7 @@ export default function AboutUs() {
                                     <Typography sx={{
                                         fontFamily: "Montserrat" ,
                                         fontWeight: "400px",
-                                        padding: "10px 20px",
+                                        padding: "20px 40px",
                                         '@media(max-width : 1200px )' :{
                                             fontSize : "0.8em",
                                             lineHeight : "18px"
@@ -155,7 +155,8 @@ export default function AboutUs() {
                                         },
                                         '@media(max-width : 599px )' :{
                                             fontSize : "0.9em",
-                                            lineHeight : "18px"
+                                            lineHeight : "18px",
+                                            padding: "20px ",
                                         },
                                         '@media(max-width : 450px )' :{
                                             fontSize : "0.7em",
@@ -166,10 +167,11 @@ export default function AboutUs() {
                                             lineHeight : "14px"
                                         },
                                     }} className="tertiary-text" variant="body1">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                        Lorem Ipsum is simply dummy text.
+Welcome to our innovative platform, where earning cryptocurrency is as simple as tapping your phone! We believe in making the digital currency world accessible and enjoyable for everyone. Our unique approach allows users to earn crypto effortlessly by engaging with their devices and later cash out their hard-earned coins.
+
+But we don't stop at just earning—we're dedicated to educating our users too. Our comprehensive crypto learning tutorials empower you with the knowledge needed to thrive in the digital currency space. As you watch, learn, and complete each course, you’ll be rewarded with even more crypto.
+
+With us, you can truly "Learn and Earn with Fun," blending education and financial growth seamlessly in the exciting world of digital currency. Join us on this revolutionary journey and become a part of our growing community today!
                                     </Typography>
                                 </Box>
                             </Grid>
