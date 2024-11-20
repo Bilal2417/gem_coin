@@ -134,7 +134,7 @@ game gem coin ROADMAP
 
 <Box sx={{width:"80px"}}></Box>
         <Box className="roadmap-head-block" sx={{width:"100%"}}>
-        <Box className="tertiary-heading-block" sx={{width:"75%"}}>
+        <Box className="tertiary-heading-block" sx={{width:"75%" , "@media (max-width:420px)":{width : "90%"}}}>
             <Typography variant="h3"             sx={{
                 fontSize: "1.5em",
                 padding: "4px 36px",
@@ -143,7 +143,7 @@ game gem coin ROADMAP
                 textTransform: "uppercase",
             }} >phase 2</Typography>
         </Box>
-        <Box className="roadmap-style-block" sx={{width:"75%"}}></Box>
+        <Box className="roadmap-style-block" sx={{width:"75%","@media (max-width:420px)":{width : "90%"}}}></Box>
     </Box>
             </Box>
 
@@ -227,7 +227,7 @@ game gem coin ROADMAP
 
 <Box sx={{width:"80px"}}></Box>
         <Box className="roadmap-head-block" sx={{width:"100%"}}>
-        <Box className="tertiary-heading-block" sx={{width:"75%"}}>
+        <Box className="tertiary-heading-block" sx={{width:"75%","@media (max-width:420px)":{width : "90%"}}}>
             <Typography variant="h3"             sx={{
                 fontSize: "1.5em",
                 padding: "4px 36px",
@@ -236,7 +236,7 @@ game gem coin ROADMAP
                 textTransform: "uppercase",
             }} >phase 4</Typography>
         </Box>
-        <Box className="roadmap-style-block" sx={{width:"75%"}}></Box>
+        <Box className="roadmap-style-block" sx={{width:"75%","@media (max-width:420px)":{width : "90%"}}}></Box>
     </Box>
     </Box>
 
