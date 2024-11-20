@@ -167,11 +167,19 @@ export default function AboutUs() {
                                             lineHeight : "14px"
                                         },
                                     }} className="tertiary-text" variant="body1">
+                                        <Box component="span" sx={{marginBottom : "5px" , display : "inline-block"}}>
+
 Welcome to our innovative platform, where earning cryptocurrency is as simple as tapping your phone! We believe in making the digital currency world accessible and enjoyable for everyone. Our unique approach allows users to earn crypto effortlessly by engaging with their devices and later cash out their hard-earned coins.
+                                        </Box>
+
+                                        <Box component="span" sx={{marginBottom : "5px" , display : "inline-block"}}>
 
 But we don't stop at just earning—we're dedicated to educating our users too. Our comprehensive crypto learning tutorials empower you with the knowledge needed to thrive in the digital currency space. As you watch, learn, and complete each course, you’ll be rewarded with even more crypto.
+</Box>
+<Box component="span" sx={{marginBottom : "5px" , display : "inline-block"}}>
 
 With us, you can truly "Learn and Earn with Fun," blending education and financial growth seamlessly in the exciting world of digital currency. Join us on this revolutionary journey and become a part of our growing community today!
+</Box>
                                     </Typography>
                                 </Box>
                             </Grid>
