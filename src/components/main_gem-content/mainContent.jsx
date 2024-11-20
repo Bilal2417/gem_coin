@@ -50,6 +50,10 @@ export default function MainContent() {
                   fontSize: "3.4em",
                   lineHeight: "42px",
                 },
+                "@media (max-width : 350px)":{
+                  fontSize: "2.4em",
+                  lineHeight: "32px",
+                },
           }}>
             you want <span style={{    color: "#7ADBE5"}}> game gem coin </span>
           </Typography>
@@ -80,6 +84,10 @@ export default function MainContent() {
                 fontSize: "14px",
                 lineHeight: "16px",
               },
+              "@media (max-width : 350px)":{
+                fontSize: "12px",
+                lineHeight: "14px",
+              },
           }}>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble
           </Typography>
@@ -96,6 +104,11 @@ export default function MainContent() {
               backgroundImage: `url(${heroBtn})`,
               backgroundSize : "contain",
               backgroundRepeat : "no-repeat",
+              '@media ( max-width : 350px )' :{                  
+                width: '160px',
+                height: '65px',
+                fontSize: '20px',
+              }
             }}
             >
             <Button

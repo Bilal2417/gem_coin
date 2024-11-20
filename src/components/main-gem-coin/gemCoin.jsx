@@ -44,6 +44,14 @@ const GemMain = () => {
                 display: "flex ",
                 alignItems:" center",
                 justifyContent : "right",
+                "@media (max-width : 450px )":{
+                  width : "120px",
+                  height : "120px",
+                },
+                "@media (max-width : 350px )":{
+                  width : "100px",
+                  height : "100px",
+                }
               }}>
             <img src={headerLogo} alt="game gem coin img" style={{ width: '120%', position: 'relative' , zIndex : '1',
                           "@media (max-width : 1200px )":{
@@ -163,6 +171,9 @@ const GemMain = () => {
               alignItems: 'center',
               width: '180px',
               height: '80px',
+              '@media ( max-width : 350px )' :{                  
+                width: '140px',
+              }
             }}
             >
             <Button
@@ -176,7 +187,7 @@ const GemMain = () => {
                 textTransform: 'uppercase',
                 color: '#fff',
                 '@media ( max-width : 350px )' :{                  
-                  fontSize: '20px',
+                  fontSize: '18px',
                 }
               }}
               >

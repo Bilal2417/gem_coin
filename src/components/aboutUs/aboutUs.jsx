@@ -12,7 +12,7 @@ import { Image } from "@mui/icons-material";
 export default function AboutUs() {
     return (
         <>
-            <Box sx={{display : "none"}} component="section" className="aboutUs-section">
+            <Box component="section" className="aboutUs-section">
 <Container>
 
                 <Box className="featured-block">
@@ -34,6 +34,7 @@ export default function AboutUs() {
                                  },
                                  '@media(max-width:720px )' : {
                                  fontSize : "2.6em",
+                                 lineHeight : "32px"
                                  }}}>
                                 featured in
                             </Typography>
@@ -69,7 +70,7 @@ export default function AboutUs() {
                                 <Box component="li" className="featured-logo-list-item">
                                     <img src={crypto} alt="crypto" />
                                 </Box>
-                                <Box component="li" sx={{marginRight : "40px",}} className="featured-logo-list-item mrg-rgt">
+                                <Box component="li" sx={{marginRight : "40px", "@media (max-width :760px)":{marginRight : "0"}}} className="featured-logo-list-item mrg-rgt">
                                     <img src={newsBtc} alt="newsBtc" />
                                 </Box>
                             </Box>
@@ -124,6 +125,12 @@ export default function AboutUs() {
                                         '@media(max-width : 599px )' :{
                                             fontSize : "3em"
                                         },
+                                        '@media(max-width : 450px )' :{
+                                            fontSize : "2.4em"
+                                        },
+                                        '@media(max-width : 350px )' :{
+                                            fontSize : "2em"
+                                        },
                                     }} className="tertiary-heading" variant="h3">
                                         about us
                                     </Typography>
@@ -149,6 +156,14 @@ export default function AboutUs() {
                                         '@media(max-width : 599px )' :{
                                             fontSize : "0.9em",
                                             lineHeight : "18px"
+                                        },
+                                        '@media(max-width : 450px )' :{
+                                            fontSize : "0.7em",
+                                            lineHeight : "16px"
+                                        },
+                                        '@media(max-width : 350px )' :{
+                                            fontSize : "0.6em",
+                                            lineHeight : "14px"
                                         },
                                     }} className="tertiary-text" variant="body1">
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
