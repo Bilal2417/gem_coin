@@ -6,6 +6,7 @@ import HowToBuy from './components/toBuy/toBuy'
 import Tokenomics from './components/tokenomics/tokenomics'
 import Roadmap from './components/roadmap/roadmap'
 import Faq from './components/faq/faq'
+import Footer from './components/footer/footer'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 <Tokenomics/>
 <Roadmap/>
 <Faq/>
+<Footer/>
     </>
   )
 }

@@ -2,9 +2,6 @@ import React from 'react';
 import { Button, Container, Box, Typography, Grid } from '@mui/material';
 import headerLogo from "../../images/game-gem-coin-img.png";
 import mainBackImg from "../../images/main-back-img.png";
-import btnBckImg from "../../images/btnBck.png";
-import Vector55 from "../../images/Vector55.png";
-import Vector58 from "../../images/Vector58.png";
 import heroBtn from "../../images/hero-btn.png"
 import MainContent from '../main_gem-content/mainContent';
 import "./gemCoin.css"
@@ -24,7 +21,6 @@ const GemMain = () => {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         paddingBottom : "100px",
-        display : "none"
       }}
       >
       <Container
@@ -32,24 +28,35 @@ const GemMain = () => {
       sx={{
         margin: '0 auto',  
         padding: '0 16px',  
-      }}>
+      }}>  
         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '2rem 0' }}>
 
           <Box sx={{
             display: "flex" ,
-            alignItems:" center"
+            alignItems:" center",
+            "@media (max-width : 1200px )":{
+              width : "65%"
+            }
           }}>
-          <Box sx={{ width: '180px', height: '180px' ,
+          <Box className="headerImg" sx={{ 
                 width: "150px",
                 height: "150px",
                 display: "flex ",
                 alignItems:" center",
                 justifyContent : "right",
               }}>
-            <img src={headerLogo} alt="game gem coin img" style={{ width: '120%', position: 'relative' , zIndex : '1'}} />
+            <img src={headerLogo} alt="game gem coin img" style={{ width: '120%', position: 'relative' , zIndex : '1',
+                          "@media (max-width : 1200px )":{
+                            width : "100%"
+                          }
+            }} />
           </Box>
 
-          <Box className="bck-img" sx={{ color: '#fff', fontFamily: '"Marcellus SC", serif', fontWeight: 400, width: '650px' , marginLeft : "-50px" , position : "relative"}}>
+          <Box className="bck-img" sx={{ color: '#fff', fontFamily: '"Marcellus SC", serif', fontWeight: 400, width: '650px' , marginLeft : "-50px" , position : "relative",    
+                  "@media (max-width : 1200px )":{
+              width : "100%",
+              marginLeft : "-35px"
+            }}}>
             <Box
               component="ul"
               sx={{
@@ -62,7 +69,10 @@ const GemMain = () => {
                 borderBottom: '3px solid #fff',
                 boxShadow: '-15px 1px 20px #00C2AC',
                 fontFamily: "Marcellus SC" ,
-              }}
+                  "@media (max-width : 1050px )":{
+                 gap : "15px"
+                
+              }}}
               >
               <Box component="li" sx={{ textTransform: 'uppercase' }}>
                 <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' ,  fontFamily: "Marcellus SC" 
@@ -70,7 +80,9 @@ const GemMain = () => {
                             textDecoration: "underLine",  
                             color : "white"
                           },
-                }}>
+                          "@media (max-width : 1050px )":{
+                            fontSize: "0.8em",                      
+                }}}>
                   About
                 </Typography>
               </Box>
@@ -80,6 +92,9 @@ const GemMain = () => {
                                         textDecoration: "underLine",  
                                         color : "white"
                                       },
+                                      "@media (max-width : 1050px )":{
+                                        fontSize: "0.8em",                      
+                            }
                 }}>
                   Features
                 </Typography>
@@ -90,6 +105,9 @@ const GemMain = () => {
                                         textDecoration: "underLine",  
                                         color : "white"
                                       },
+                                      "@media (max-width : 1050px )":{
+                                        fontSize: "0.8em",                      
+                            }
                 }}>
                   Roadmap
                 </Typography>
@@ -100,6 +118,9 @@ const GemMain = () => {
                                         textDecoration: "underLine",  
                                         color : "white"
                                       },
+                                      "@media (max-width : 1050px )":{
+                                        fontSize: "0.8em",                      
+                            }
                 }}>
                   Team
                 </Typography>
@@ -110,6 +131,9 @@ const GemMain = () => {
                                         textDecoration: "underLine",  
                                         color : "white"
                                       },
+                                      "@media (max-width : 1050px )":{
+                                        fontSize: "0.8em",                      
+                            }
                 }}>
                   Presale
                 </Typography>
@@ -120,6 +144,9 @@ const GemMain = () => {
                                         textDecoration: "underLine", 
                                         color : "white" 
                                       },
+                                      "@media (max-width : 1050px )":{
+                                        fontSize: "0.8em",                      
+                            }
                 }}>
                   FAQs
                 </Typography>
@@ -140,16 +167,17 @@ const GemMain = () => {
             >
             <Button
               sx={{
-                fontSize: '28px',
+                fontSize: '24px',
                 fontFamily: '"Metal Mania", system-ui',
                 backgroundImage: `url(${heroBtn})`,
                 backgroundSize : "contain",
                 backgroundRepeat : "no-repeat",
-                padding: '8px 22px',
-                position: 'relative',
-                zIndex: 1,
+                padding: '6px 22px',
                 textTransform: 'uppercase',
                 color: '#fff',
+                '@media ( max-width : 350px )' :{                  
+                  fontSize: '20px',
+                }
               }}
               >
               Buy Now

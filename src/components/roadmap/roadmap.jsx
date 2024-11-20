@@ -3,27 +3,57 @@ import { Box , Container, Typography } from "@mui/material"
 
 export default function Roadmap () {
     return <>
-    <Box component="section" className="roadmap-section">
+    <Box  component="section" className="roadmap-section">
 
-    <Container>
-<Box>
+    <Container sx={{paddingLeft : "0px" , paddingRight : "0"}}>
+<Box sx={{"@media (max-width : 1200px )" : {
+    width : "89%" ,
+    margin : 'auto'
+}}}>
 
         <Box className="roadmap-block">
 
 <Box className="section-head">
-<Box className="section-lft-line"></Box>
-<Box className="secondary-heading-block">
-<Typography className="heading-grd" variant="h2">
+<Box sx={{width:"300px",
+                                           '@media (max-width:950px)':{
+                                               width : "200px"
+                                            },
+                                            '@media (max-width:650px)':{
+                                                width : "150px"
+                                            },
+                                        }}  className="section-lft-line"></Box>
+<Box>
+<Typography className="heading-grd" variant="h2"sx={{ fontSize : "4.2em", fontFamily : "Metal Mania",
+                                '@media(max-width:1120px )' : {
+                                 lineHeight: "52px",},
+                                 '@media(max-width:850px )' : {
+                                 fontSize : "3.2em",
+                                 lineHeight : "38px"
+                                 },
+                                 '@media(max-width:720px )' : {
+                                 fontSize : "2.6em",
+                                 }}}>
 game gem coin ROADMAP
 </Typography>
 </Box>
-<Box className="section-rgt-line"></Box>
+<Box sx={{width:"300px",
+                                           '@media (max-width:950px)':{
+                                               width : "200px"
+                                            },
+                                            '@media (max-width:650px)':{
+                                                width : "150px"
+                                            },
+                                        }}  className="section-rgt-line"></Box>
 </Box>
 </Box>
 
 <Box className="roadmap-content">
 
-    <Box className="roadmap-content-block content-block-1st">
+    <Box className="roadmap-content-block content-block-1st" sx={{
+        '@media (max-width : 650px)':{
+            padding : "0 0 30px 30px"
+        },
+    }}>
         <Box className="roadmap-head-block">
 
         <Box className="tertiary-heading-block">
@@ -45,19 +75,39 @@ game gem coin ROADMAP
             padding: "30px 0 30px 60px",
             width: "90%",
             lineHeight: "28px",
-                textAlign: "left",
-                color: "#fff",
-                opacity: "0.9",
+            textAlign: "left",
+            color: "#fff",
+            opacity: "0.9",
+            '@media ( max-width : 800px )':{
+                lineHeight: "20px",
+                fontSize : "0.8em"
+                },
+                '@media ( max-width : 650px )':{
+                    fontSize : "0.7em",
+                    padding :"15px 0 15px 35px",
+                    },
+        '@media (max-width : 400px)':{
+            padding : "15px 0 15px 15px"
+        },
         }}>
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem 
         </Typography>
         </Box>
         </Box>
 
-        <Box className="roadmap-content-block content-block-2nd">
-        <Box className="roadmap-head-block mrg-lft">
+        <Box className="roadmap-content-block content-block-2nd" sx={{
+                    '@media (max-width : 650px)':{
+                        padding : "0 30px 30px 0"
+                    },
+        '@media (max-width : 400px)':{
+            padding : "0 30px 30px 15px"
+        },
+        }}>
+            <Box sx={{display:"flex"}}>
 
-        <Box className="tertiary-heading-block">
+<Box sx={{width:"80px"}}></Box>
+        <Box className="roadmap-head-block" sx={{width:"100%"}}>
+        <Box className="tertiary-heading-block" sx={{width:"75%"}}>
             <Typography variant="h3"             sx={{
                 fontSize: "1.5em",
                 padding: "4px 36px",
@@ -66,8 +116,9 @@ game gem coin ROADMAP
                 textTransform: "uppercase",
             }} >phase 2</Typography>
         </Box>
-        <Box className="roadmap-style-block"></Box>
+        <Box className="roadmap-style-block" sx={{width:"75%"}}></Box>
     </Box>
+            </Box>
 
     <Box className="tertiary-text-block">
     <Typography variant="body1" sx={{
@@ -78,13 +129,28 @@ game gem coin ROADMAP
                 textAlign: "left",
                 color: "#fff",
                 opacity: "0.9",
+                '@media ( max-width : 800px )':{
+                    lineHeight: "20px",
+                    fontSize : "0.8em"
+                    },
+                    '@media ( max-width : 650px )':{
+                        fontSize : "0.7em",
+                        padding :"15px 0 15px 35px",
+                        },                    
+        '@media (max-width : 400px)':{
+            padding : "15px 0 15px 15px"
+        },
         }}>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem 
         </Typography>
         </Box>
         </Box>
 
-        <Box className="roadmap-content-block content-block-3rd">
+        <Box className="roadmap-content-block content-block-3rd" sx={{
+                    '@media (max-width : 650px)':{
+                        padding : "0 0 30px 30px"
+                    }
+        }}>
         <Box className="roadmap-head-block bfr-line">
 
         <Box className="tertiary-heading-block">
@@ -108,16 +174,33 @@ game gem coin ROADMAP
                 textAlign: "left",
                 color: "#fff",
                 opacity: "0.9",
+                '@media ( max-width : 800px )':{
+                    lineHeight: "20px",
+                    fontSize : "0.8em"
+                    },
+                    '@media ( max-width : 650px )':{
+                        fontSize : "0.7em",
+                        padding :"15px 0 15px 35px",
+                        },
+                        '@media (max-width : 400px)':{
+                            padding : "15px 0 15px 15px"
+                        },
         }}>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem 
         </Typography>
         </Box>
         </Box>
 
-        <Box className="roadmap-content-block content-block-4th">
-        <Box className="roadmap-head-block mrg-lft">
+        <Box className="roadmap-content-block content-block-4th"sx={{
+                    '@media (max-width : 650px)':{
+                        padding : "0 30px 30px 0"
+                    }
+        }}>
+                        <Box sx={{display:"flex"}}>
 
-        <Box className="tertiary-heading-block">
+<Box sx={{width:"80px"}}></Box>
+        <Box className="roadmap-head-block" sx={{width:"100%"}}>
+        <Box className="tertiary-heading-block" sx={{width:"75%"}}>
             <Typography variant="h3"             sx={{
                 fontSize: "1.5em",
                 padding: "4px 36px",
@@ -126,7 +209,8 @@ game gem coin ROADMAP
                 textTransform: "uppercase",
             }} >phase 4</Typography>
         </Box>
-        <Box className="roadmap-style-block"></Box>
+        <Box className="roadmap-style-block" sx={{width:"75%"}}></Box>
+    </Box>
     </Box>
 
     <Box className="tertiary-text-block">
@@ -138,6 +222,17 @@ game gem coin ROADMAP
                 textAlign: "left",
                 color: "#fff",
                 opacity: "0.9",
+                '@media ( max-width : 800px )':{
+                    lineHeight: "20px",
+                    fontSize : "0.8em"
+                    },
+                '@media ( max-width : 650px )':{
+                    fontSize : "0.7em",
+                    padding :"15px 0 15px 35px",
+                    },
+                    '@media (max-width : 400px)':{
+                        padding : "15px 0 15px 15px"
+                    },
         }}>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem 
         </Typography>

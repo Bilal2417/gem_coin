@@ -7,21 +7,45 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import "./faq.css"
 import { Container , Box , Typography} from '@mui/material';
 
+
 export default function Faq () {
     return <>
-    <section id='faq-section'>
+    <Box component='section' id='faq-section'>
         <Container>
 
-        <Box className="roadmap-block">
+        <Box className="faq-block">
 
 <Box className="section-head">
-<Box className="section-lineLeft"></Box>
-<Box className="secondary-heading-block">
-<Typography className="heading-grd fnt-sml" variant="h2">
+<Box sx={{width:"300px",
+                                           '@media (max-width:950px)':{
+                                               width : "200px"
+                                            },
+                                            '@media (max-width:650px)':{
+                                                width : "150px"
+                                            },
+                                        }} className="section-lineLeft"></Box>
+<Box>
+<Typography className="heading-grd fnt-sml" variant="h2" sx={{ fontSize : "4.2em", fontFamily : "Metal Mania",
+                                '@media(max-width:1120px )' : {
+                                 lineHeight: "52px",},
+                                 '@media(max-width:850px )' : {
+                                 fontSize : "3.2em",
+                                 lineHeight: "36px"
+                                 },
+                                 '@media(max-width:720px )' : {
+                                 fontSize : "2.6em",
+                                 }}}>
 game gem coin faq
 </Typography>
 </Box>
-<Box className="section-line"></Box>
+<Box sx={{width:"300px",
+                                           '@media (max-width:950px)':{
+                                               width : "200px"
+                                            },
+                                            '@media (max-width:650px)':{
+                                                width : "150px"
+                                            },
+                                        }} className="section-line"></Box>
 </Box>
 </Box>
 
@@ -41,15 +65,33 @@ game gem coin faq
           sx={{margin : "0px"}}
           >
           <Typography
+          variant='h3'
           sx={{
             fontFamily : "Metal Mania",
             fontSize : "20px" ,
+            textAlign : "left",
+            '@media(max-width:700px)':{
+              fontSize : "18px" ,
+            },
+            '@media(max-width:650px)':{
+              fontSize : "16px" ,
+            },
+            '@media(max-width:550px)':{
+              fontSize : "14px" ,
+            },
           }}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-        <Typography variant='body1' sx={{textAlign : "left", fontSize : "14px" , opacity : "0.8"}}>
+        <Typography variant='body1' sx={{textAlign : "left", fontSize : "14px" , opacity : "0.8",
+                      '@media(max-width:700px)':{
+                        fontSize : "12px" ,
+                      },
+                      '@media(max-width:550px)':{
+                        fontSize : "10px" ,
+                      },
+        }}>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
           </Typography>
         </AccordionDetails>
@@ -71,10 +113,20 @@ game gem coin faq
           sx={{margin : "0px" }}
           >
           <Typography
+                    variant='h3'
           sx={{
             fontFamily : "Metal Mania",
-            fontSize : "20px" 
-            , opacity : "1"
+            fontSize : "20px" ,
+            textAlign : "left",
+            '@media(max-width:700px)':{
+              fontSize : "18px" ,
+            },
+            '@media(max-width:650px)':{
+              fontSize : "16px" ,
+            },
+            '@media(max-width:550px)':{
+              fontSize : "14px" ,
+            },
           }}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
           </Typography>
@@ -103,9 +155,20 @@ game gem coin faq
           sx={{margin : "0px" }}
           >
           <Typography
+                    variant='h3'
           sx={{
             fontFamily : "Metal Mania",
             fontSize : "20px" ,
+            textAlign : "left",
+            '@media(max-width:700px)':{
+              fontSize : "18px" ,
+            },
+            '@media(max-width:650px)':{
+              fontSize : "16px" ,
+            },
+            '@media(max-width:550px)':{
+              fontSize : "14px" ,
+            },
           }}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
           </Typography>
@@ -133,9 +196,20 @@ game gem coin faq
           sx={{margin : "0px"}}
           >
           <Typography
+                    variant='h3'
           sx={{
             fontFamily : "Metal Mania",
             fontSize : "20px" ,
+            textAlign : "left",
+            '@media(max-width:700px)':{
+              fontSize : "18px" ,
+            },
+            '@media(max-width:650px)':{
+              fontSize : "16px" ,
+            },
+            '@media(max-width:550px)':{
+              fontSize : "14px" ,
+            },
           }}>
             Lorem Ipsum is simply dummy text of the printing and typesetting
           </Typography>
@@ -147,8 +221,8 @@ game gem coin faq
           </Typography>
         </AccordionDetails>
       </Accordion>
-      
+  
               </Container>
-    </section>
+    </Box>
             </>
 }
