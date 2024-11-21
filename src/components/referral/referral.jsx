@@ -1,17 +1,14 @@
-import "./tokenomics.css"
-import { Box , Container, Grid ,Grid2, Typography } from "@mui/material"
-import tknchart from "../../images/tknImg.png"
-import tokenImg from "../../images/usingPadMain.png"
-
-export default function Tokenomics () {
+import { Container , Box , Typography  } from "@mui/material"
+import bckImg from "../../images/starsBckImg.png"
+import refImg from "../../images/refImg.png"
+export default function Referral () {
     return <>
-    <Box component="section" className="token-block">
-<Container       sx={{
-        paddingLeft: "0",   
-        paddingRight: "0",  
-      }}>
-
-                            <Box className="section-head">
+    <Box sx={{
+        backgroundColor : "black",
+        backgroundImage :  `url(${bckImg})`,
+    }} component="section">
+        <Container>
+        <Box className="section-head">
                         <Box  sx={{width:"300px",
                                            '@media (max-width:950px)':{
                                                width : "200px"
@@ -30,7 +27,7 @@ export default function Tokenomics () {
                                     '@media(max-width:720px )' : {
                                         fontSize : "2.6em",
                                     }}}>
-                                tokenomics
+                                referral
                             </Typography>
                         </Box>
                         <Box  sx={{width:"300px",
@@ -42,19 +39,10 @@ export default function Tokenomics () {
                                             },
                                         }}  className="section-rgt-line"></Box>
                     </Box>
-
-                        <Grid container spacing={2} justifyContent={"center"} sx={{
-                            '@media ( max-width : 900px )' : {
-                                gap : "50px"}}}>
-                            
-
-<Grid item xs={12} md={6} sx={{ justifyContent : "center"}} className="tokenChartBlock">
-    <img src={tknchart} />
-</Grid>
-<Grid item xs={12} md={6} className="tokenImgBlock">
-    <img src={tokenImg}/>
-</Grid>
-                        </Grid>
+                    
+                    <Box sx={{width : "100%"}}>
+                        <img style={{width : "100%"}} src={refImg}/>
+                    </Box>
         </Container>
     </Box>
     </>

@@ -85,7 +85,10 @@ export default function HowToBuy () {
                         },
                         '@media (min-width : 900px )':{
                             flexBasis: 'calc(33.33% - 50px) !important' ,
-                                                }
+                                                },
+                        '@media (max-width : 500px )':{
+                            maxWidth: '85% ' ,
+                                                },
                     }}>
                         <Box className="buy-img-block">
                             <img src={buyImg}/>
@@ -131,7 +134,10 @@ export default function HowToBuy () {
                                               },
                         '@media (min-width : 900px )':{
                             flexBasis: 'calc(33.33% - 50px) !important' ,
-                        }
+                        },
+                        '@media (max-width : 500px )':{
+                            maxWidth: '85% ' ,
+                                                },
                     }}>
                         <Box className="buy-img-block">
                             <img src={buyImg}/>
@@ -175,7 +181,10 @@ export default function HowToBuy () {
                                               },
                                                 '@media (min-width : 900px )':{
                                                     flexBasis: 'calc(33.33% - 50px) !important' ,
-                                                }
+                                                },                                        
+                        '@media (max-width : 500px )':{
+                            maxWidth: '85% ' ,
+                                                },
                     }}>
                         <Box className="buy-img-block">
                             <img src={buy3Img}/>

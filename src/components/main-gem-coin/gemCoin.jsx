@@ -68,7 +68,7 @@ const GemMain = () => {
               width : "100%",
               marginLeft : "-35px"
             }}}>
-            <Box
+            <Box className='main-nav'
               component="ul"
               sx={{
                 listStyle: 'none',

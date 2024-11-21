@@ -18,6 +18,9 @@ export default function MainContent() {
       },
       "@media (max-width : 900px)":{
         justifyContent : "center"
+      },
+      "@media (max-width : 700px) and (min-width : 500px )":{
+        gap : "100px"
       }
       }}>
 

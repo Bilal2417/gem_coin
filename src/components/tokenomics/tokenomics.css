@@ -1,4 +1,4 @@
-.tokenChart{
+/* .tokenChart{
     width: 400px;
     height: 400px;
     display: flex;
@@ -6,16 +6,16 @@
     background-image: conic-gradient(#80D4FF 70deg, #838989 0 235deg, #0D4664 0);
     align-items: center;
     justify-content: center;
-}
+}*/
 .tokenChartBlock,
 .tokenImgBlock{
-    width: 50%;
-}
+    max-width: 50%;
+} 
 .tokenImgBlock{
     position: relative;
 }
 .tokenChartBlock img{
-    width: 80%;
+    width: 100%;
 }
 .tokenImgBlock:before{
     content: "";
@@ -36,8 +36,11 @@
 
 /* MEDIA QUERIES///////////////////// */
 @media ( max-width : 900px ){
-    .tokenImgBlock img{
+    .tokenChartBlock img{
         width: 50%;
+    }
+    .tokenImgBlock img{
+        width: 70%;
     }
     .tokenImgBlock::before{
         left: auto;

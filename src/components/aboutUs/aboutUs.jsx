@@ -70,7 +70,7 @@ export default function AboutUs() {
                                 <Box component="li" className="featured-logo-list-item">
                                     <img src={crypto} alt="crypto" />
                                 </Box>
-                                <Box component="li" sx={{marginRight : "40px", "@media (max-width :760px)":{marginRight : "0"}}} className="featured-logo-list-item mrg-rgt">
+                                <Box component="li"  className="featured-logo-list-item mrg-rgt">
                                     <img src={newsBtc} alt="newsBtc" />
                                 </Box>
                             </Box>

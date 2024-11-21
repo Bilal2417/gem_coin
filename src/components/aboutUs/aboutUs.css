@@ -3,8 +3,8 @@
 .token-block,
 .roadmap-section{
     background-image: url("../../images/starsBckImg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: repeat;
     background-color: black;
 }
 .featured-block{
@@ -39,10 +39,11 @@ padding: 50px 0;
 }
 .featured-logo-list{
     display: flex;
-    gap: 40px;
+    gap: 25px;
 }
 .featured-logo-list-item img {
     filter: grayscale(100%)  invert(70%);
+    width: 85%;
 }
 .about-img-block img {
     width: 75%;
@@ -85,7 +86,7 @@ padding: 50px 0;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 45%;
+    height: 220px;
     left: 0;
 }
 .about-area::before{
@@ -102,30 +103,41 @@ padding: 50px 0;
 
 
 /* MEDIA QUERIES//////////////////////////// */
-@media(max-width : 600px ) {
-    .about-img-block img{
-        width: 100%;
-         transform: scale(1);
-    }
+@media(max-width :1175px){
     .about-area::before,
     .about-area::after{
         background-size: contain;
-        height: 100px;
+        height: 200px;
     }
 }
-@media(max-width :880px){
+@media(max-width :950px){
+    .about-area::before,
+    .about-area::after{
+        background-size: contain;
+        height: 165px;
+    }
 }
 @media(max-width :760px){
     /* .about-area::after{
         height: 100px;
-    } */
-    .featured-logo-list {
-        gap: 0px;
+        } */
+        .featured-logo-list {
+            gap: 0px;
+        }
+        .featured-logo-list-item img {
+            width: 70%;
+        }
+    } 
+    @media(max-width : 600px ) {
+        .about-img-block img{
+            width: 100%;
+             transform: scale(1);
+        }
+        .about-area::before,
+        .about-area::after{
+            height: 100px;
+        }
     }
-    .featured-logo-list-item img {
-        width: 70%;
-    }
-} 
 @media(max-width :450px){
     /* .about-area::before{
         height: 50px;
