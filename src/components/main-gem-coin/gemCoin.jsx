@@ -5,12 +5,14 @@ import mainBackImg from "../../images/main-back-img.png";
 import heroBtn from "../../images/hero-btn.png"
 import MainContent from '../main_gem-content/mainContent';
 import "./gemCoin.css"
+import { ViewHeadline } from '@mui/icons-material';
 
 
 export default function GemMain  ()  {
+
   const navHead = () => {
     const btnNavEl = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector(".header");
+const headerEl = document.querySelector(".hide");
 
 
   headerEl.classList.toggle("nav-open");
@@ -35,15 +37,13 @@ const headerEl = document.querySelector(".header");
         margin: '0 auto',  
         padding: '0 16px',  
       }}>  
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '2rem 0' }}>
+        <Box sx={{ display: 'flex',  alignItems: 'center', padding: '2rem 0' ,
+          '@media (max-width : 899.70px )':{
+            justifyContent : "space-between"
+          }
+        }}>
 
-          <Box sx={{
-            display: "flex" ,
-            alignItems:" center",
-            "@media (max-width : 1200px )":{
-              width : "65%"
-            }
-          }}>
+
           <Box className="headerImg" sx={{ 
                 width: "150px",
                 height: "150px",
@@ -66,12 +66,24 @@ const headerEl = document.querySelector(".header");
             }} />
           </Box>
 
-          <Box className="bck-img" sx={{ color: '#fff', fontFamily: '"Marcellus SC", serif', fontWeight: 400, width: '650px' , marginLeft : "-50px" , position : "relative",    
+          <Box className="hide" sx={{
+            display: "flex" ,
+            alignItems:" center",
+            justifyContent : "space-between",
+            width : "100%",
+            "@media (max-width : 1200px )":{
+              width : "85%"
+            },
+            "@media (max-width : 899.70px )":{
+              width : "fit-content"
+            }
+          }}>
+          <Box className="bck-img main-nav" sx={{ color: '#fff', fontFamily: '"Marcellus SC", serif', fontWeight: 400, width: '650px' , marginLeft : "-50px" , position : "relative",    
                   "@media (max-width : 1200px )":{
-              width : "100%",
-              marginLeft : "-35px"
+                    width : "60%",
+                    marginLeft : "-35px"
             }}}>
-            <Box className='main-nav'
+            <Box className=''
               component="ul"
               sx={{
                 listStyle: 'none',
@@ -85,7 +97,12 @@ const headerEl = document.querySelector(".header");
                 fontFamily: "Marcellus SC" ,
                   "@media (max-width : 1050px )":{
                  gap : "15px"
-                
+                  },
+                  "@media (max-width : 899.70px )":{
+                 boxShadow : "none",
+                  flexDirection : "column",
+                  fontSize : "1.2em",
+                  border : "none"
               }}}
               >
               <Box component="li" sx={{ textTransform: 'uppercase' }}>
@@ -96,7 +113,12 @@ const headerEl = document.querySelector(".header");
                           },
                           "@media (max-width : 1050px )":{
                             fontSize: "0.8em",                      
-                }}}>
+                },
+                          "@media (max-width : 899.70px )":{
+                            fontSize: "1.2em",                      
+                },
+                
+                }}>
                   About
                 </Typography>
               </Box>
@@ -108,7 +130,11 @@ const headerEl = document.querySelector(".header");
                                       },
                                       "@media (max-width : 1050px )":{
                                         fontSize: "0.8em",                      
-                            }
+                            },
+                            
+                          "@media (max-width : 899.70px )":{
+                            fontSize: "1.2em",                      
+                },
                 }}>
                   Features
                 </Typography>
@@ -121,7 +147,10 @@ const headerEl = document.querySelector(".header");
                                       },
                                       "@media (max-width : 1050px )":{
                                         fontSize: "0.8em",                      
-                            }
+                            },
+                            "@media (max-width : 899.70px )":{
+                              fontSize: "1.2em",                      
+                  },
                 }}>
                   Roadmap
                 </Typography>
@@ -134,7 +163,10 @@ const headerEl = document.querySelector(".header");
                                       },
                                       "@media (max-width : 1050px )":{
                                         fontSize: "0.8em",                      
-                            }
+                            },
+                            "@media (max-width : 899.70px )":{
+                              fontSize: "1.2em",                      
+                  },
                 }}>
                   Team
                 </Typography>
@@ -147,7 +179,10 @@ const headerEl = document.querySelector(".header");
                                       },
                                       "@media (max-width : 1050px )":{
                                         fontSize: "0.8em",                      
-                            }
+                            },
+                            "@media (max-width : 899.70px )":{
+                              fontSize: "1.2em",                      
+                  },
                 }}>
                   Presale
                 </Typography>
@@ -160,14 +195,16 @@ const headerEl = document.querySelector(".header");
                                       },
                                       "@media (max-width : 1050px )":{
                                         fontSize: "0.8em",                      
-                            }
+                            },
+                            "@media (max-width : 899.70px )":{
+                              fontSize: "1.2em",                      
+                  },
                 }}>
                   FAQs
                 </Typography>
               </Box>
             </Box>
           </Box>
-</Box>
 
           <Box
             sx={{
@@ -177,6 +214,9 @@ const headerEl = document.querySelector(".header");
               alignItems: 'center',
               width: '180px',
               height: '80px',
+              '@media ( max-width : 900px )' :{                  
+                display: " none"
+              },
               '@media ( max-width : 350px )' :{                  
                 width: '140px',
               }
@@ -200,6 +240,22 @@ const headerEl = document.querySelector(".header");
               Buy Now
             </Button>
           </Box>
+<Box sx={{display:"none",
+  '@media (max-width :899.70px)':{
+    display : "block"
+  }
+}}>
+  <Button onClick={navHead} sx={{zIndex : "2",
+    "&:focus":{
+      outline : "none"
+    }
+  }}>
+
+  <ViewHeadline sx={{color:"#fff",width:"50px",height : "50px"}}/>
+  </Button>
+                </Box>
+</Box>
+
         </Box>
       </Container>
       <MainContent/>
