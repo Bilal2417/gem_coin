@@ -7,12 +7,15 @@ import MainContent from '../main_gem-content/mainContent';
 import "./gemCoin.css"
 
 
-const GemMain = () => {
-    // const CustomContainer = styled(Box)({
-    //     maxWidth: '1400px',
-    //     margin: '0 auto', 
-    //     padding: '0 16px',
-    //   });
+export default function GemMain  ()  {
+  const navHead = () => {
+    const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+
+  headerEl.classList.toggle("nav-open");
+
+  }
   return (
 
     <Box component="section"
@@ -204,4 +207,4 @@ const GemMain = () => {
   );
 };
 
-export default GemMain;
+

@@ -2,6 +2,7 @@ import { Box , Container, Typography , Grid} from "@mui/material"
 import buyImg from "../../images/buy1stImg.png"
 import buy3Img from "../../images/buy3rdImg.png"
 import "./toBuy.css"
+import SolanaDay from "../solana/solana"
 export default function HowToBuy () {
     return <>
     <Box component="section" className="buy-section" sx={{padding : "100px 0 0" ,
@@ -225,6 +226,7 @@ export default function HowToBuy () {
 </Container>
                                 </Box>
                                                                       </Container>
+                                                                      <SolanaDay/>
                                                                       </Box>
     </>
 }
