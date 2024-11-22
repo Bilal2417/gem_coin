@@ -32,6 +32,7 @@ const triggerAnimation = (index) => {
   };
 
   const handleMouseEnter = () => {
+    if (window.innerWidth > 800) {
     gsap.fromTo(
         ufoRef.current,
         {
@@ -54,9 +55,34 @@ const triggerAnimation = (index) => {
         }
       );
     }
+    else{
+        gsap.fromTo(
+            ufoRef.current,
+            {
+              x: -200,          // Start at the left side of the screen
+              y: 0,          // Start in the center vertically (relative to the container)
+              scale: 1,       // Original size
+              opacity: 1,     // Full opacity initially
+            },
+            {
+              x: 200,        // Move horizontally to 500px to the right
+              y: 0,         // Move vertically to simulate floating (up to 50px)
+              scale: 1.2,    // Slightly scale up
+              opacity: 1,    // Full opacity
+              duration: 2,   // Total duration of animation
+              ease: "power1.inOut",  // Ease for smooth, natural movement
+              repeat: -1,    // Repeat indefinitely
+              yoyo: true,    // Yoyo effect (returns to the original state)
+              repeatDelay: 0,  // Delay before repeating the animation
+              stagger: 0.3,  // Stagger the animation slightly for multiple UFOs (if applicable)
+            }
+          );
+    }
+    }
 
 
   const handleMouseLeaveUfo = () => {
+    if (window.innerWidth > 800) {
     gsap.killTweensOf(ufoRef.current);
     gsap.to(ufoRef.current, {
         scale: 1,        // Reset to original size
@@ -66,6 +92,7 @@ const triggerAnimation = (index) => {
         ease: "power2.out", // Smooth reset easing
       });
   };
+}
   
 
 

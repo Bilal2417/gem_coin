@@ -5,31 +5,11 @@ import mainBackImg from "../../images/main-back-img.png";
 import heroBtn from "../../images/hero-btn.png"
 import MainContent from '../main_gem-content/mainContent';
 import { ViewHeadline } from '@mui/icons-material';
-import { useRef , useEffect } from 'react';
 import "./gemCoin.css"
-import gsap from 'gsap';
 
 export default function GemMain  ()  {
 
 
-  const navbarRef = useRef(null);
-
-  // useEffect(() => {
-  //   // Animate the width of the navbar from 0% to 100%
-  //   gsap.fromTo(navbarRef.current, 
-  //     {
-  //       opacity : 0,
-  //       // scale : 0.5,
-  //       y : -100,
-  //     },
-  //     {
-  //       opacity : 1,
-  //       // scale : 2,
-  //       y : 0 ,
-  //       duration : 1,
-  //       ease : "power2.out"
-  //     });
-  // }, []); 
   
   const navHead = () => {
     const btnNavEl = document.querySelector(".btn-mobile-nav");
@@ -58,7 +38,7 @@ const headerEl = document.querySelector(".hide");
         margin: '0 auto',  
         padding: '0 16px',  
       }}>  
-        <Box ref={navbarRef} sx={{ display: 'flex',  alignItems: 'center', padding: '2rem 0' ,
+        <Box sx={{ display: 'flex',  alignItems: 'center', padding: '2rem 0' ,
           '@media (max-width : 899.70px )':{
             justifyContent : "space-between"
           }

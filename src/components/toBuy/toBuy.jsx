@@ -14,12 +14,22 @@ const [hasAnimated, setHasAnimated] = useState(false);
 
 const buyAnimation = ( index ) => {
     console.log(index)
+if(index !=1){
 
     gsap.fromTo(
         buyBlock.current[index],
         { y: 200, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.6, delay: 0.1, ease: "bounce.out" }
-      );
+    );
+}
+else{
+
+    gsap.fromTo(
+        buyBlock.current[index],
+        { y: -200, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.6, delay: 0.1, ease: "bounce.out" }
+    );
+}
 
 
 }
