@@ -3,14 +3,36 @@ import { Box , Container, Grid ,Grid2, Typography } from "@mui/material"
 import tknchart from "../../images/tknImg.png"
 import tokenchart from "../../images/toknChartImg.png"
 import tokenImg from "../../images/usingPadMain.png"
-import bLimit from "../../images/bLimit.png"
-import pShare from "../../images/pShare.png"
-import rShare from "../../images/rShare.png"
-import oPublic from "../../images/tknComp.png"
+import gsap from "gsap"
+import { useRef } from "react"
 
 export default function Tokenomics () {
+
+    const sectionRef = useRef(null)
+
+const startAnimation = () => {
+    gsap.to(sectionRef.current, {
+        scale: 1.1, // Zoom in
+        duration: 0.5,
+        ease: "power2.out",
+      });
+}
+
+const endAnimation = () => {
+    gsap.to(sectionRef.current, {
+      scale: 1, // Back to original size
+      duration: 0.5,
+      ease: "power2.out",
+    });
+  };
+
     return <>
-    <Box component="section" className="token-block" sx={{
+    <Box ref={sectionRef} 
+                                onMouseEnter={startAnimation}
+                                onTouchStart={startAnimation}
+                                onMouseLeave={endAnimation}
+                                onTouchEnd={endAnimation}
+    component="section" className="token-block" sx={{
            position : "relative",
            "&:after":{
                                    content: '""',  
@@ -52,7 +74,8 @@ export default function Tokenomics () {
                                             },
                                         }}  className="section-lft-line"></Box>
                         <Box>
-                            <Typography className="heading-grd" variant="h2"  sx={{ fontSize : "4.2em", fontFamily : "Metal Mania",
+                            <Typography
+                            className="heading-grd" variant="h2"  sx={{ fontSize : "4.2em", fontFamily : "Metal Mania",
                                 '@media(max-width:1120px )' : {
                                     lineHeight: "52px",},
                                     '@media(max-width:850px )' : {

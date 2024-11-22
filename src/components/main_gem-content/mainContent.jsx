@@ -17,13 +17,14 @@ export default function MainContent() {
       {
         opacity : 0,
         // scale : 0.5,
+        delay : 2,
         y : -100,
       },
       {
         opacity : 1,
         // scale : 2,
         y : 0 ,
-        duration : 1,
+        duration : 3,
         ease : "power2.out"
       }
 

@@ -17,41 +17,84 @@ const [hasAnimated, setHasAnimated] = useState(false);
 
 const startAnimation = () => {
     // if (!hasAnimated) {
+        if (window.innerWidth > 600) {
         gsap.fromTo(
             aboutImgAni.current,
             {
-              scale: 1,      // Starting scale
+              scale: 1.5,      // Starting scale
               opacity: 1,    // Starting opacity
             },
-            {
-              scale: 1.4,    // Animate to this scale
-              opacity: 0.9,  // Animate to this opacity
-              duration: 1,
-              yoyo: true,    // Makes the animation reverse (bounce effect)
-              repeat: -1,    // Repeat indefinitely
-              ease: "power2.out",
-            }
-          );
+
+                {
+                    scale: 1.4,    // Animate to this scale
+                    opacity: 0.9,  // Animate to this opacity
+                    duration: 1,
+                    yoyo: true,    // Makes the animation reverse (bounce effect)
+                    repeat: -1,    // Repeat indefinitely
+                    ease: "power2.out",
+                }
+            );
+        }
+        else{
+            gsap.fromTo(
+                aboutImgAni.current,
+                {
+                  scale: 1,      // Starting scale
+                  opacity: 1,    // Starting opacity
+                },
+    
+                    {
+                        scale: 1.1,    // Animate to this scale
+                        opacity: 0.9,  // Animate to this opacity
+                        duration: 1,
+                        yoyo: true,    // Makes the animation reverse (bounce effect)
+                        repeat: -1,    // Repeat indefinitely
+                        ease: "power2.out",
+                    }
+                );
+
+        }
     // setHasAnimated(true);
 // }
 }
 const endAnimation =() => {
     gsap.killTweensOf(aboutImgAni.current);
+    if (window.innerWidth > 600) {
+
+        gsap.fromTo(
+            aboutImgAni.current,
+            {
+                scale: aboutImgAni.current.scale || 1.4,    // Start from the current scale (1.4 after hover)
+                opacity: aboutImgAni.current.opacity || 0.9,  // Start from the current opacity (0.9 after hover)
+            },
+        {
+            scale: 1.5,      // Animate back to original scale
+            opacity: 1,    // Animate back to original opacity
+            duration: 0.3, // Reset duration (quick reset)
+            ease: "power2.out",
+            repeat: 0,     // No repeat after reset
+            yoyo: false,   // No bounce effect
+        }
+    );
+}
+else{
     gsap.fromTo(
         aboutImgAni.current,
         {
-          scale: aboutImgAni.current.scale || 1.4,    // Start from the current scale (1.4 after hover)
-          opacity: aboutImgAni.current.opacity || 0.9,  // Start from the current opacity (0.9 after hover)
+            scale: aboutImgAni.current.scale,    // Start from the current scale (1.4 after hover)
+            opacity: aboutImgAni.current.opacity || 0.9,  // Start from the current opacity (0.9 after hover)
         },
-        {
-          scale: 1.5,      // Animate back to original scale
-          opacity: 1,    // Animate back to original opacity
-          duration: 0.3, // Reset duration (quick reset)
-          ease: "power2.out",
-          repeat: 0,     // No repeat after reset
-          yoyo: false,   // No bounce effect
-        }
-      );
+    {
+        scale: 1,      // Animate back to original scale
+        opacity: 1,    // Animate back to original opacity
+        duration: 0.3, // Reset duration (quick reset)
+        ease: "power2.out",
+        repeat: 0,     // No repeat after reset
+        yoyo: false,   // No bounce effect
+    }
+    );
+
+}
 }
 
     return (

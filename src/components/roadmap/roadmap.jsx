@@ -8,7 +8,7 @@ export default function Roadmap () {
 
 
 const phaseRef = useRef([])
-
+const ufoRef = useRef(null);
 
 const triggerAnimation = (index) => {
     gsap.to(phaseRef.current[index], {
@@ -30,6 +30,45 @@ const triggerAnimation = (index) => {
       ease: "power2.inOut",
     });
   };
+
+  const handleMouseEnter = () => {
+    gsap.fromTo(
+        ufoRef.current,
+        {
+          x: -200,          // Start at the left side of the screen
+          y: -50,          // Start in the center vertically (relative to the container)
+          scale: 1,       // Original size
+          opacity: 1,     // Full opacity initially
+        },
+        {
+          x: 200,        // Move horizontally to 500px to the right
+          y: 50,         // Move vertically to simulate floating (up to 50px)
+          scale: 1.2,    // Slightly scale up
+          opacity: 1,    // Full opacity
+          duration: 2,   // Total duration of animation
+          ease: "power1.inOut",  // Ease for smooth, natural movement
+          repeat: -1,    // Repeat indefinitely
+          yoyo: true,    // Yoyo effect (returns to the original state)
+          repeatDelay: 0,  // Delay before repeating the animation
+          stagger: 0.3,  // Stagger the animation slightly for multiple UFOs (if applicable)
+        }
+      );
+    }
+
+
+  const handleMouseLeaveUfo = () => {
+    gsap.killTweensOf(ufoRef.current);
+    gsap.to(ufoRef.current, {
+        scale: 1,        // Reset to original size
+        x: 0,            // Reset position to the center
+        rotation: 0,     // Reset rotation
+        duration: 0.4,   // Quick reset
+        ease: "power2.out", // Smooth reset easing
+      });
+  };
+  
+
+
 
 
 
@@ -60,7 +99,10 @@ const triggerAnimation = (index) => {
         height : "50px"
     },
 }}>
-    <img className="ufo_img" src={ufoImg}></img>
+    <img ref={ufoRef}
+    onMouseEnter={handleMouseEnter}
+    onMouseLeave={handleMouseLeaveUfo}
+    className="ufo_img" src={ufoImg}></img>
 </Box>
 <Box className="section-head">
 <Box sx={{width:"300px",
