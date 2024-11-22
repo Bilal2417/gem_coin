@@ -66,35 +66,37 @@ const headerEl = document.querySelector(".hide");
             }} />
           </Box>
 
-          <Box className="hide" sx={{
-            display: "flex" ,
+          <Box component="nav" className=" hide" sx={{
+                       width : '100%'
+          }}>
+          <Box  className="main-nav" sx={{ color: '#fff', fontFamily: '"Marcellus SC", serif', fontWeight: 400,  display: "flex" ,
             alignItems:" center",
             justifyContent : "space-between",
-            width : "100%",
-            "@media (max-width : 1200px )":{
-              width : "85%"
-            },
-            "@media (max-width : 899.70px )":{
-              width : "fit-content"
-            }
-          }}>
-          <Box className="bck-img main-nav" sx={{ color: '#fff', fontFamily: '"Marcellus SC", serif', fontWeight: 400, width: '650px' , marginLeft : "-50px" , position : "relative",    
-                  "@media (max-width : 1200px )":{
-                    width : "60%",
-                    marginLeft : "-35px"
-            }}}>
-            <Box className=''
+            width : "100%",  marginLeft : "-50px" ,    
+                  // "@media (max-width : 1200px )":{
+                  //   width : "60%",
+                  //   marginLeft : "-35px"
+                  // },
+                  "@media (max-width : 899.70px )":{
+                  flexDirection: 'column',
+                  justifyContent: 'center',
+               }
+                  }}>
+            <Box className="bck-img"
               component="ul"
               sx={{
+                width : "60%",
                 listStyle: 'none',
                 display: 'flex',
                 justifyContent: 'center',
+                alignItems : "center",
                 gap: '30px',
                 padding: '20px 0',
                 borderTop: '3px solid #fff',
                 borderBottom: '3px solid #fff',
                 boxShadow: '-15px 1px 20px #00C2AC',
                 fontFamily: "Marcellus SC" ,
+                position : "relative",
                   "@media (max-width : 1050px )":{
                  gap : "15px"
                   },
@@ -204,7 +206,6 @@ const headerEl = document.querySelector(".hide");
                 </Typography>
               </Box>
             </Box>
-          </Box>
 
           <Box
             sx={{
@@ -214,9 +215,6 @@ const headerEl = document.querySelector(".hide");
               alignItems: 'center',
               width: '180px',
               height: '80px',
-              '@media ( max-width : 900px )' :{                  
-                display: " none"
-              },
               '@media ( max-width : 350px )' :{                  
                 width: '140px',
               }
@@ -239,7 +237,9 @@ const headerEl = document.querySelector(".hide");
               >
               Buy Now
             </Button>
+                </Box>
           </Box>
+</Box>
 <Box sx={{display:"none",
   '@media (max-width :899.70px)':{
     display : "block"
@@ -254,7 +254,6 @@ const headerEl = document.querySelector(".hide");
   <ViewHeadline sx={{color:"#fff",width:"50px",height : "50px"}}/>
   </Button>
                 </Box>
-</Box>
 
         </Box>
       </Container>

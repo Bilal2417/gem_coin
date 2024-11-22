@@ -9,7 +9,7 @@ export default function SolanaDay () {
     <Container>
         <Box sx={{display : "flex" , justifyContent : "center"}}>
             <Box sx={{
-                width : "80%",
+                width : "100%",
                 backgroundImage : "linear-gradient(#80D4FF, rgba(3, 65, 97, 0.6))" ,
                     padding :"50px",
                         display : "flex",
@@ -17,7 +17,7 @@ export default function SolanaDay () {
                         gap : "25px",
                         position : "relative",
                         '&:before': {
-                            content: '""',  
+                            // content: '""',  
                             backgroundImage : `url(${bckTree})`,
                             backgroundSize : "cover",
                             position : "absolute",
@@ -29,6 +29,9 @@ export default function SolanaDay () {
                             bottom : "0",
                             zIndex : "1",              
                             opacity: "0.4"
+                        },
+                        "@media (max-width : 450px )":{
+                            padding :"50px 20px",
                         }
                 }}>
 
@@ -36,7 +39,11 @@ export default function SolanaDay () {
                     <Typography sx={{
                         color : "#fff",
                         fontFamily : "Metal Mania",
-                        lineHeight : "32px"
+                        lineHeight : "32px",
+                        "@media (max-width : 450px )":{
+                            fontSize : "1.6em",
+                            lineHeight : "26px"
+                        }
                     }} variant="h4">
                     GAME GEM COIN launches on Solana day! 
                     </Typography>
@@ -44,7 +51,11 @@ export default function SolanaDay () {
                         color : "#fff",
                         opacity : "0.9",
                         fontFamily : "Metal Mania",
-                        lineHeight : "32px"
+                        lineHeight : "32px",
+                        "@media (max-width : 450px )":{
+                            fontSize : "1.6em",
+                            lineHeight : "26px"
+                        }
                     }} variant="h4">                     
                     Last chance to buy!
                     </Typography>
@@ -67,7 +78,11 @@ export default function SolanaDay () {
                         width : '180px',
                         fontFamily : "Montserrat",
                         borderRadius : "8px",
-                        padding : "8px 0"
+                        padding : "8px 0",
+                        "@media (max-width : 450px )":{
+                            fontSize : "12px",
+                            width : "145px"
+                        }
                     }}>Stage 1/5</Button>
                     </Grid>
 
@@ -79,7 +94,11 @@ export default function SolanaDay () {
                         width : '180px',
                         fontFamily : "Montserrat",
                         borderRadius : "8px",
-                        padding : "8px 0"
+                        padding : "8px 0",
+                        "@media (max-width : 450px )":{
+                            fontSize : "12px",
+                            width : "145px"
+                        }
                     }}>GGC = $ 0.0060</Button>
 </Grid>
 
@@ -91,7 +110,11 @@ export default function SolanaDay () {
                         width : '180px',
                         fontFamily : "Poppins",
                         borderRadius : "8px",
-                        padding : "8px 0"
+                        padding : "8px 0",
+                        "@media (max-width : 450px )":{
+                            fontSize : "12px",
+                            width : "145px"
+                        }
                     }}>Listing Price  $0.03</Button>
 </Grid>
 
@@ -103,15 +126,23 @@ export default function SolanaDay () {
                         width : '180px',
                         fontFamily : "Poppins",
                          borderRadius : "8px",
-                        padding : "8px 0"
+                        padding : "8px 0",
+                        "@media (max-width : 450px )":{
+                            fontSize : "12px",
+                            width : "145px"
+                        }
                     }}>Next Price  $0.0120</Button>
 </Grid>
                         </Grid>
 
                         <Box>
-                            <Box sx={{width : "90%" , backgroundColor : "#D9D9D9" , height : "30px" , margin : "auto" , borderRadius : "14px"}}>
-                                <Box sx={{width : "20%" , backgroundColor : "#0F92C6" , height : "30px" , borderRadius : "14px", position : "relative" ,
-                                         '&:after': {
+                            <Box sx={{width : "90%" , backgroundColor : "#D9D9D9" , height : "30px" , margin : "auto" , borderRadius : "14px" ,
+                                "@media (max-width :450px )":{
+                                    height : "20px"
+                                }
+                            }}>
+                                <Box sx={{width : "20%" , backgroundColor : "#0F92C6" , height : "30px" , borderRadius : "14px", position : "relative" ,                                
+                                '&:after': {
                                             content: '""',  
                                             position: 'absolute',
                                             bottom: '-50%',
@@ -122,7 +153,15 @@ export default function SolanaDay () {
                                             backgroundSize : "contain", 
                                             backgroundRepeat : "no-repeat",
                                             backgroundPosition : "center"
-                                          }
+                                        },
+                                        "@media (max-width :450px )":{
+                                            height : "20px",
+                                            '&:after': {
+                                                left : "60%",
+                                                width : "40px",
+                                                height : "40px"
+                                            }
+                                        }
                                 }}></Box>
                             </Box>
                         </Box>
@@ -140,13 +179,19 @@ export default function SolanaDay () {
         color : "#6AD4FD",
         fontSize : "28px",
         fontFamily : "Metal Mania",
-        width : "fit-content"
+        width : "fit-content",
+        "@media (max-width : 450px )":{
+            fontSize : "24px"
+        }
     }} variant="body1">tokens sold</Typography>
     <Typography sx={{
         color : "#fff",
         fontSize : "14px",
         fontFamily : "Poppins",
-        width : "fit-content"
+        width : "fit-content",
+        "@media (max-width : 450px )":{
+            fontSize : "12px"
+        }
         
     }} variant="body1">1,977,332 / 200,000,000</Typography>
     </Box>
@@ -163,13 +208,19 @@ export default function SolanaDay () {
     color : "#6AD4FD",
     fontSize : "28px",
         fontFamily : "Metal Mania",
-        width : "fit-content"
+        width : "fit-content",
+        "@media (max-width : 450px )":{
+            fontSize : "24px"
+        }
     }} variant="body1">tokens sold</Typography>
     <Typography sx={{
         color : "#fff",
         fontSize : "14px",
         fontFamily : "Poppins",
-        width : "fit-content"
+        width : "fit-content",
+        "@media (max-width : 450px )":{
+            fontSize : "12px"
+        }
         
     }} variant="body1">1,977,332 / 200,000,000</Typography>
     </Box>
@@ -178,8 +229,13 @@ export default function SolanaDay () {
 </Grid>
 
 
-<Grid container sx={{width : "80%" , margin : 'auto' , justifyContent : "space-between"}}>
-    <Grid item xs={12} sm={12} md={6}>
+<Box container sx={{width : "80%" , margin : 'auto' ,display : "flex", justifyContent : "space-between",
+    "@media (max-width : 800px )":{
+        flexDirection : "column",
+        gap : "20px",
+        alignItems : "center"
+    }
+}}>
         <Box sx={{display : "flex" , alignItems : "center",
                             backgroundColor : "#fff",
                             padding : "8px",
@@ -190,8 +246,6 @@ export default function SolanaDay () {
             <img style={{ width : "30px", height : "30px"}} src={solanaLogo} alt="solana logo"/>
             <Input type="number"/>
         </Box>
-    </Grid>
-    <Grid item xs={12} sm={12} md={6} sx={{justifyItems : "flex-end"}}>
         <Box sx={{display : "flex" , alignItems : "center",
                             backgroundColor : "#fff",
                             padding : "8px",
@@ -202,8 +256,7 @@ export default function SolanaDay () {
             <img style={{ width : "30px", height : "30px"}} src={barImg} alt="solana logo"/>
             <Input type="number"/>
         </Box>
-    </Grid>
-                            </Grid>
+                            </Box>
 
 <Box sx={{width : "90%" , margin : "auto"}}>
     <Button sx={{
