@@ -85,7 +85,7 @@ const headerEl = document.querySelector(".hide");
             <Box className="bck-img"
               component="ul"
               sx={{
-                width : "60%",
+                width : "65%",
                 listStyle: 'none',
                 display: 'flex',
                 justifyContent: 'center',
@@ -97,7 +97,8 @@ const headerEl = document.querySelector(".hide");
                 boxShadow: '-15px 1px 20px #00C2AC',
                 fontFamily: "Marcellus SC" ,
                 position : "relative",
-                  "@media (max-width : 1050px )":{
+                  "@media (max-width : 1000px )":{
+                    width : "60%",
                  gap : "15px"
                   },
                   "@media (max-width : 899.70px )":{
@@ -209,15 +210,10 @@ const headerEl = document.querySelector(".hide");
 
           <Box
             sx={{
-              position: 'relative',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              width: '180px',
-              height: '80px',
-              '@media ( max-width : 350px )' :{                  
-                width: '140px',
-              }
+              width: 'fit-content',
+              // '@media ( max-width : 350px )' :{                  
+              //   width: '140px',
+              // }
             }}
             >
             <Button
@@ -245,7 +241,7 @@ const headerEl = document.querySelector(".hide");
     display : "block"
   }
 }}>
-  <Button onClick={navHead} sx={{zIndex : "2",
+  <Button onClick={navHead} sx={{zIndex : "4",
     "&:focus":{
       outline : "none"
     }
