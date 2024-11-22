@@ -55,7 +55,8 @@ const buyAnimation = () => {
 
 
     return <>
-    <Box onMouseEnter={buyAnimation} component="section" className="buy-section" sx={{padding : "100px 0 " ,
+    <Box onMouseEnter={buyAnimation}
+    onTouchStart={buyAnimation} component="section" className="buy-section" sx={{padding : "100px 0 " ,
         '@media ( min-width : 760px )':{
             padding : "200px 0 50px"
         }

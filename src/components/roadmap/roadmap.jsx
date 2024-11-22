@@ -159,7 +159,7 @@ game gem coin ROADMAP
 <Box className="roadmap-content">
 
     <Box onMouseEnter={triggerAnimation1st} 
-
+               onTouchStart={triggerAnimation1st}
     ref={phase1} className="roadmap-content-block content-block-1st" sx={{
         '@media (max-width : 650px)':{
             padding : "0 0 30px 30px"
@@ -206,7 +206,8 @@ game gem coin ROADMAP
         </Box>
         </Box>
 
-        <Box ref={phase2} onMouseEnter={triggerAnimation2nd} className="roadmap-content-block content-block-2nd" sx={{
+        <Box ref={phase2} onMouseEnter={triggerAnimation2nd}
+                                                   onTouchStart={triggerAnimation2nd} className="roadmap-content-block content-block-2nd" sx={{
                     '@media (max-width : 650px)':{
                         padding : "0 30px 30px 0"
                     },
@@ -257,7 +258,8 @@ game gem coin ROADMAP
         </Box>
         </Box>
 
-        <Box ref={phase3} onMouseEnter={triggerAnimation3rd} className="roadmap-content-block content-block-3rd" sx={{
+        <Box ref={phase3} onMouseEnter={triggerAnimation3rd}
+                                             onTouchStart={triggerAnimation3rd}   className="roadmap-content-block content-block-3rd" sx={{
                     '@media (max-width : 650px)':{
                         padding : "0 0 30px 30px"
                     }
@@ -302,7 +304,8 @@ game gem coin ROADMAP
         </Box>
         </Box>
 
-        <Box ref={phase4} onMouseEnter={triggerAnimation4th} className="roadmap-content-block content-block-4th"sx={{
+        <Box ref={phase4} onMouseEnter={triggerAnimation4th}
+                                           onTouchStart={triggerAnimation4th} className="roadmap-content-block content-block-4th"sx={{
                     '@media (max-width : 650px)':{
                         padding : "0 30px 30px 0"
                     }

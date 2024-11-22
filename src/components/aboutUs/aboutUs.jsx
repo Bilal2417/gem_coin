@@ -14,7 +14,7 @@ export default function AboutUs() {
 
 const aboutImgAni = useRef(null)
 
-const hell = () => {
+const startAnimation = () => {
 
 
         gsap.fromTo(
@@ -109,7 +109,8 @@ const hell = () => {
                         padding : '0'
                     },
                 }}
-                onMouseEnter={hell}
+                onMouseEnter={startAnimation}
+                onTouchStart={startAnimation}
                 >
                     <Container>
 
