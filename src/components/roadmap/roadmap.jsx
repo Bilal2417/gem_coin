@@ -7,81 +7,29 @@ import gsap from "gsap"
 export default function Roadmap () {
 
 
-let phase1 = useRef(null)
-let phase2 = useRef(null)
-let phase3 = useRef(null)
-let phase4 = useRef(null)
+const phaseRef = useRef([])
 
-let condition = true
 
-const triggerAnimation1st = ( ) => {
-// if(condition){
-    gsap.fromTo(
-        phase1.current,
-        {
-            opacity : 0,
-            x : "-100%"
-        },
-        {
-            opacity :1,
-            x : "0%",
-            duration : 2
-        }
-    )
-// }
-// condition = false
-}
-const triggerAnimation2nd = ( ) => {
-    // if(condition){
-        gsap.fromTo(
-            phase2.current,
-            {
-            opacity : 0,
-            x : "100%"
-        },
-        {
-            opacity :1,
-            x : "0%",
-            duration : 2
-        }
-    )
-// }
-// condition = false
-}
-const triggerAnimation3rd = ( ) => {
-    // if(condition){
-        gsap.fromTo(
-        phase3.current,
-        {
-            opacity : 0,
-            x : "-100%"
-        },
-        {
-            opacity :1,
-            x : "0%",
-            duration : 2
-        }
-    )
-// }
-// condition = false
-}
-const triggerAnimation4th = ( ) => {
-// if(condition){
-    gsap.fromTo(
-        phase4.current,
-        {
-            opacity : 0,
-            x : "100%"
-        },
-        {
-            opacity :1,
-            x : "0%",
-            duration : 2
-        }
-    )
-// }
-// condition = false
-}
+const triggerAnimation = (index) => {
+    gsap.to(phaseRef.current[index], {
+      scale: 1.1, // Slightly scale up
+      rotationY: 15, // Apply a slight 3D rotation on Y-axis
+      x: 20, // Slightly slide to the right
+      duration: 0.5, // Duration of the animation
+      ease: "power2.out",
+    });
+  };
+
+
+  const handleMouseLeave = (index) => {
+    gsap.to(phaseRef.current[index], {
+      scale: 1, // Return to original scale
+      rotationY: 0, // Reset rotation
+      x: 0, // Reset horizontal position
+      duration: 0.5, // Duration of the reset animation
+      ease: "power2.inOut",
+    });
+  };
 
 
 
@@ -158,9 +106,11 @@ game gem coin ROADMAP
 
 <Box className="roadmap-content">
 
-    <Box onMouseEnter={triggerAnimation1st} 
-               onTouchStart={triggerAnimation1st}
-    ref={phase1} className="roadmap-content-block content-block-1st" sx={{
+    <Box ref={(el) => phaseRef.current[0] = el}
+                                   onMouseEnter={() => triggerAnimation(0)}
+                                   onMouseLeave={() => handleMouseLeave(0)}
+                                   onTouchStart={() => triggerAnimation(0)}
+                                   onTouchEnd={() => handleMouseLeave(0)} className="roadmap-content-block content-block-1st" sx={{
         '@media (max-width : 650px)':{
             padding : "0 0 30px 30px"
         },
@@ -206,8 +156,11 @@ game gem coin ROADMAP
         </Box>
         </Box>
 
-        <Box ref={phase2} onMouseEnter={triggerAnimation2nd}
-                                                   onTouchStart={triggerAnimation2nd} className="roadmap-content-block content-block-2nd" sx={{
+        <Box ref={(el) => phaseRef.current[1] = el}
+                                   onMouseEnter={() => triggerAnimation(1)}
+                                   onMouseLeave={() => handleMouseLeave(1)}
+                                   onTouchStart={() => triggerAnimation(1)}
+                                   onTouchEnd={() => handleMouseLeave(1)} className="roadmap-content-block content-block-2nd" sx={{
                     '@media (max-width : 650px)':{
                         padding : "0 30px 30px 0"
                     },
@@ -258,8 +211,11 @@ game gem coin ROADMAP
         </Box>
         </Box>
 
-        <Box ref={phase3} onMouseEnter={triggerAnimation3rd}
-                                             onTouchStart={triggerAnimation3rd}   className="roadmap-content-block content-block-3rd" sx={{
+        <Box ref={(el) => phaseRef.current[2] = el}
+                                   onMouseEnter={() => triggerAnimation(2)}
+                                   onMouseLeave={() => handleMouseLeave(2)}
+                                   onTouchStart={() => triggerAnimation(2)}
+                                   onTouchEnd={() => handleMouseLeave(2)} className="roadmap-content-block content-block-3rd" sx={{
                     '@media (max-width : 650px)':{
                         padding : "0 0 30px 30px"
                     }
@@ -304,8 +260,12 @@ game gem coin ROADMAP
         </Box>
         </Box>
 
-        <Box ref={phase4} onMouseEnter={triggerAnimation4th}
-                                           onTouchStart={triggerAnimation4th} className="roadmap-content-block content-block-4th"sx={{
+        <Box  ref={(el) => phaseRef.current[3] = el}
+                                   onMouseEnter={() => triggerAnimation(3)}
+                                   onMouseLeave={() => handleMouseLeave(3)}
+                                   onTouchStart={() => triggerAnimation(3)}
+                                   onTouchEnd={() => handleMouseLeave(3)}
+                                   className="roadmap-content-block content-block-4th"sx={{
                     '@media (max-width : 650px)':{
                         padding : "0 30px 30px 0"
                     }

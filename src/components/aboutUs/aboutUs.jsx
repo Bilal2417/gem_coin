@@ -6,30 +6,52 @@ import crypto from "../../images/cryptoImg.png";
 import newsBtc from "../../images/btcImg.png";
 import aboutImg from "../../images/usingPad.png";
 import Marquee from "react-fast-marquee";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef , useState} from "react";
 import gsap from "gsap";
 import "./aboutUs.css";
 
 export default function AboutUs() {
 
 const aboutImgAni = useRef(null)
+const [hasAnimated, setHasAnimated] = useState(false);
 
 const startAnimation = () => {
-
-
+    // if (!hasAnimated) {
         gsap.fromTo(
             aboutImgAni.current,
+            {
+              scale: 1,      // Starting scale
+              opacity: 1,    // Starting opacity
+            },
+            {
+              scale: 1.4,    // Animate to this scale
+              opacity: 0.9,  // Animate to this opacity
+              duration: 1,
+              yoyo: true,    // Makes the animation reverse (bounce effect)
+              repeat: -1,    // Repeat indefinitely
+              ease: "power2.out",
+            }
+          );
+    // setHasAnimated(true);
+// }
+}
+const endAnimation =() => {
+    gsap.killTweensOf(aboutImgAni.current);
+    gsap.fromTo(
+        aboutImgAni.current,
         {
-            x : -300,
-            opacity : 0
+          scale: aboutImgAni.current.scale || 1.4,    // Start from the current scale (1.4 after hover)
+          opacity: aboutImgAni.current.opacity || 0.9,  // Start from the current opacity (0.9 after hover)
         },
         {
-            x : 0,
-            opacity : 1,
-            duration : 1.5,
-            ease : "power2.out"
-        },
-    )
+          scale: 1.5,      // Animate back to original scale
+          opacity: 1,    // Animate back to original opacity
+          duration: 0.3, // Reset duration (quick reset)
+          ease: "power2.out",
+          repeat: 0,     // No repeat after reset
+          yoyo: false,   // No bounce effect
+        }
+      );
 }
 
     return (
@@ -102,7 +124,7 @@ const startAnimation = () => {
 
                     </Container>
 
-                <Box  className="about-area" sx={{padding:"40px 0" , position : "relative" , marginTop :"200px"
+                <Box  className="about-area" sx={{padding:"40px 0" , position : "relative" , marginTop :"200px" 
                     ,
                     '@media(max-width : 600px )' :{
                         marginTop :"100px",
@@ -111,16 +133,17 @@ const startAnimation = () => {
                 }}
                 onMouseEnter={startAnimation}
                 onTouchStart={startAnimation}
+                onMouseLeave={endAnimation}
+                onTouchEnd={endAnimation}
                 >
                     <Container>
 
                         <Grid  container spacing={2} alignItems="center">
                             <Grid  item xs={12} sm={6}
                                 className="about-img-block"
-                                sx={{ display: 'flex', justifyContent: 'flex-start', width: '45%' }}
+                                sx={{ display: 'flex', justifyContent: 'flex-start', width: '45%', }}
                                 >
-                                <img ref={aboutImgAni} src={aboutImg} alt="about us" sx={{ width: '75%', transform: 'scale(1.5)' ,
-                                                                      }} />
+                                <img ref={aboutImgAni} src={aboutImg} alt="about us" style={{ width: '75%', transform: 'scale(1.5)' }} />
                             </Grid>
 
                             <Grid  item xs={12} sm={6}

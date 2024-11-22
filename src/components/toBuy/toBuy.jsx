@@ -3,60 +3,39 @@ import buyImg from "../../images/buy1stImg.png"
 import buy3Img from "../../images/buy3rdImg.png"
 import "./toBuy.css"
 import SolanaDay from "../solana/solana"
-import { useEffect, useRef } from "react"
+import { useState, useRef } from "react"
 import gsap from "gsap"
 export default function HowToBuy () {
 
 
-const buyBlock1st = useRef(null)
-const buyBlock2nd = useRef(null)
-const buyBlock3rd = useRef(null)
+const buyBlock = useRef([])
 
+const [hasAnimated, setHasAnimated] = useState(false);
 
-const buyAnimation = () => {
+const buyAnimation = ( index ) => {
+    console.log(index)
 
     gsap.fromTo(
-        buyBlock1st.current,
-        {
-            x : -500,
-            opacity : 0
-        },
-        {
-            x : 0,
-            opacity : 1,
-            duration : 1
-        }
-    )
-    gsap.fromTo(
-        buyBlock2nd.current,
-        {
-            y : -500,
-            opacity : 0,
-        },
-        {
-            y : 0,
-            opacity : 1,
-            duration : 1
-        }
-    )
-    gsap.fromTo(
-        buyBlock3rd.current,
-        {
-            x : 500,
-            opacity : 0,
-        },
-        {
-            x : 0,
-            opacity : 1,
-            duration : 1
-        }
-    )
+        buyBlock.current[index],
+        { y: 200, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.6, delay: 0.1, ease: "bounce.out" }
+      );
+
+
 }
+const handleLeave = (index) => {
+ 
+    gsap.to(buyBlock.current[index], {
+        scaleX: 1,  
+        scaleY: 1,   
+        duration: 0.3,
+        ease: "power2.out"
+    });
+  };
 
 
     return <>
-    <Box onMouseEnter={buyAnimation}
-    onTouchStart={buyAnimation} component="section" className="buy-section" sx={{padding : "100px 0 " ,
+    <Box component="section" className="buy-section" sx={{padding : "100px 0 " ,
         '@media ( min-width : 760px )':{
             padding : "200px 0 50px"
         }
@@ -120,9 +99,8 @@ const buyAnimation = () => {
                         }}>
 
 
-<Grid container spacing={2} sx={{ gap : "50px" ,
+<Grid  container spacing={2} sx={{ gap : "50px" ,
         display: 'grid',
-        // gridTemplateColumns: '1fr', 
         '@media (min-width: 900px)': {
           gridTemplateColumns: 'repeat(3 ,1fr)',
         },
@@ -131,7 +109,11 @@ const buyAnimation = () => {
         },
         }}>
 
-                    <Grid ref={buyBlock1st} item xs={8} sm={6} md={12} className="buy-content-block" sx={{ display : "flex" , flexDirection : "column" , 
+                    <Grid     ref={(el) => buyBlock.current[0] = el}
+                                   onMouseEnter={() => buyAnimation(0)}
+                                   onTouchStart={() => buyAnimation(0)} 
+                                   onMouseLeave={()=> handleLeave(0)}
+                    item xs={8} sm={6} md={12} className="buy-content-block" sx={{ display : "flex" , flexDirection : "column" , 
                            '@media (max-width: 900px)': {
                             gridColumn: 'span 1', 
                         },
@@ -179,7 +161,10 @@ const buyAnimation = () => {
                         </Box>
                     </Grid>
 
-                    <Grid ref={buyBlock2nd}  item xs={8} sm={6} md={12}  className="buy-content-block" sx={{ display : "flex" , flexDirection : "column",
+                    <Grid    ref={(el) => buyBlock.current[1] = el}
+                                   onMouseEnter={() => buyAnimation(1)}
+                                   onTouchStart={() => buyAnimation(1)}  
+                                   onMouseLeave={()=> handleLeave(1)}  item xs={8} sm={6} md={12}  className="buy-content-block" sx={{ display : "flex" , flexDirection : "column",
                                                '@media (max-width: 900px)': {
                                                 gridColumn: 'span 1', 
                                                 justifySelf : "flex-end"
@@ -227,7 +212,10 @@ const buyAnimation = () => {
                         </Box>
                     </Grid>
 
-                    <Grid ref={buyBlock3rd} item xs={8} sm={6} md={12} className="buy-content-block" sx={{ display : "flex" , flexDirection : "column", 
+                    <Grid   ref={(el) => buyBlock.current[2] = el}
+                                   onMouseEnter={() => buyAnimation(2)}
+                                   onTouchStart={() => buyAnimation(2)} 
+                                   onMouseLeave={()=> handleLeave(2)} item xs={8} sm={6} md={12} className="buy-content-block" sx={{ display : "flex" , flexDirection : "column", 
                                                '@media (max-width: 900px)': {
                                                 gridColumn: 'span 1', 
                                               },
