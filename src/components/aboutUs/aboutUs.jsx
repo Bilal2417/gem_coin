@@ -5,11 +5,33 @@ import cDesk from "../../images/coinDeskImg.png";
 import crypto from "../../images/cryptoImg.png";
 import newsBtc from "../../images/btcImg.png";
 import aboutImg from "../../images/usingPad.png";
-import "./aboutUs.css";
 import Marquee from "react-fast-marquee";
-import { Image } from "@mui/icons-material";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import "./aboutUs.css";
 
 export default function AboutUs() {
+
+const aboutImgAni = useRef(null)
+
+const hell = () => {
+
+
+        gsap.fromTo(
+            aboutImgAni.current,
+        {
+            x : -300,
+            opacity : 0
+        },
+        {
+            x : 0,
+            opacity : 1,
+            duration : 1.5,
+            ease : "power2.out"
+        },
+    )
+}
+
     return (
         <>
             <Box component="section" className="aboutUs-section">
@@ -80,22 +102,23 @@ export default function AboutUs() {
 
                     </Container>
 
-
-                <Box className="about-area" sx={{padding:"40px 0" , position : "relative" , marginTop :"200px"
+                <Box  className="about-area" sx={{padding:"40px 0" , position : "relative" , marginTop :"200px"
                     ,
                     '@media(max-width : 600px )' :{
                         marginTop :"100px",
                         padding : '0'
                     },
-                }}>
+                }}
+                onMouseEnter={hell}
+                >
                     <Container>
 
-                        <Grid container spacing={2} alignItems="center">
+                        <Grid  container spacing={2} alignItems="center">
                             <Grid  item xs={12} sm={6}
                                 className="about-img-block"
                                 sx={{ display: 'flex', justifyContent: 'flex-start', width: '45%' }}
                                 >
-                                <img src={aboutImg} alt="about us" sx={{ width: '75%', transform: 'scale(1.5)' ,
+                                <img ref={aboutImgAni} src={aboutImg} alt="about us" sx={{ width: '75%', transform: 'scale(1.5)' ,
                                                                       }} />
                             </Grid>
 

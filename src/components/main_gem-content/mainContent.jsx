@@ -1,10 +1,37 @@
 import { Container, Box, Button, Typography, Grid } from "@mui/material";
 import gemOnPad from "../../images/container-main-image.png";
 import heroBtn from "../../images/hero-btn.png"
-
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 import "./main.css";
 
 export default function MainContent() {
+
+  const imgAni = useRef(null);
+  const imgAniBefore= useRef(null);
+
+ 
+  useEffect(()=>{
+    gsap.fromTo(
+      imgAni.current,
+      {
+        opacity : 0,
+        // scale : 0.5,
+        y : -100,
+      },
+      {
+        opacity : 1,
+        // scale : 2,
+        y : 0 ,
+        duration : 1,
+        ease : "power2.out"
+      }
+
+      
+    )
+  },[])
+
+
   return (
     <Container
       disableGutters
@@ -136,7 +163,7 @@ export default function MainContent() {
 
 <Grid item xs={12} sm={8} md={6} sx={{width : "50%" , position : "relative"}} className="hero-img-block-bck">
 
-        <Box className="hero-img-block" sx={{ width: '100%', position: 'relative' }}>
+        <Box ref={imgAni} className="hero-img-block" sx={{ width: '100%', position: 'relative' , zIndex : "1"}}>
           <img src={gemOnPad} alt="Gem Coin" />
         </Box>
 </Grid>

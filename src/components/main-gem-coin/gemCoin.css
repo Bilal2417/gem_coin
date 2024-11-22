@@ -112,7 +112,7 @@
 .bck-img::after{
     content: "";
     width: 40%;
-    height: 200px;
+    height: 250px;
     position: absolute;
     top: -50px;
     left: 100%;

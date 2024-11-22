@@ -3,11 +3,61 @@ import buyImg from "../../images/buy1stImg.png"
 import buy3Img from "../../images/buy3rdImg.png"
 import "./toBuy.css"
 import SolanaDay from "../solana/solana"
+import { useEffect, useRef } from "react"
+import gsap from "gsap"
 export default function HowToBuy () {
+
+
+const buyBlock1st = useRef(null)
+const buyBlock2nd = useRef(null)
+const buyBlock3rd = useRef(null)
+
+
+const buyAnimation = () => {
+
+    gsap.fromTo(
+        buyBlock1st.current,
+        {
+            x : -500,
+            opacity : 0
+        },
+        {
+            x : 0,
+            opacity : 1,
+            duration : 1
+        }
+    )
+    gsap.fromTo(
+        buyBlock2nd.current,
+        {
+            y : -500,
+            opacity : 0,
+        },
+        {
+            y : 0,
+            opacity : 1,
+            duration : 1
+        }
+    )
+    gsap.fromTo(
+        buyBlock3rd.current,
+        {
+            x : 500,
+            opacity : 0,
+        },
+        {
+            x : 0,
+            opacity : 1,
+            duration : 1
+        }
+    )
+}
+
+
     return <>
-    <Box component="section" className="buy-section" sx={{padding : "100px 0 0" ,
+    <Box onMouseEnter={buyAnimation} component="section" className="buy-section" sx={{padding : "100px 0 " ,
         '@media ( min-width : 760px )':{
-            padding : "200px 0 0"
+            padding : "200px 0 50px"
         }
     }}>
         <Container>
@@ -80,7 +130,7 @@ export default function HowToBuy () {
         },
         }}>
 
-                    <Grid item xs={8} sm={6} md={12} className="buy-content-block" sx={{ display : "flex" , flexDirection : "column" , 
+                    <Grid ref={buyBlock1st} item xs={8} sm={6} md={12} className="buy-content-block" sx={{ display : "flex" , flexDirection : "column" , 
                            '@media (max-width: 900px)': {
                             gridColumn: 'span 1', 
                         },
@@ -128,7 +178,7 @@ export default function HowToBuy () {
                         </Box>
                     </Grid>
 
-                    <Grid item xs={8} sm={6} md={12}  className="buy-content-block" sx={{ display : "flex" , flexDirection : "column",
+                    <Grid ref={buyBlock2nd}  item xs={8} sm={6} md={12}  className="buy-content-block" sx={{ display : "flex" , flexDirection : "column",
                                                '@media (max-width: 900px)': {
                                                 gridColumn: 'span 1', 
                                                 justifySelf : "flex-end"
@@ -176,7 +226,7 @@ export default function HowToBuy () {
                         </Box>
                     </Grid>
 
-                    <Grid item xs={8} sm={6} md={12} className="buy-content-block" sx={{ display : "flex" , flexDirection : "column", 
+                    <Grid ref={buyBlock3rd} item xs={8} sm={6} md={12} className="buy-content-block" sx={{ display : "flex" , flexDirection : "column", 
                                                '@media (max-width: 900px)': {
                                                 gridColumn: 'span 1', 
                                               },
@@ -226,7 +276,6 @@ export default function HowToBuy () {
 </Container>
                                 </Box>
                                                                       </Container>
-                                                                      <SolanaDay/>
                                                                       </Box>
     </>
 }

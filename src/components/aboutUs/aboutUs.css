@@ -1,7 +1,8 @@
 .aboutUs-section,
 .buy-section,
 .token-block,
-.roadmap-section{
+.roadmap-section,
+.solana-section{
     background-image: url("../../images/starsBckImg.png");
     background-size: contain;
     background-repeat: repeat;

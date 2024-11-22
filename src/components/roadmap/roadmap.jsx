@@ -1,8 +1,90 @@
 import "./roadmap.css"
 import { Box , Container, Typography } from "@mui/material"
 import ufoImg from "../../images/rdmap-ufo.png"
+import { useRef } from "react"
+import gsap from "gsap"
 
 export default function Roadmap () {
+
+
+let phase1 = useRef(null)
+let phase2 = useRef(null)
+let phase3 = useRef(null)
+let phase4 = useRef(null)
+
+let condition = true
+
+const triggerAnimation1st = ( ) => {
+// if(condition){
+    gsap.fromTo(
+        phase1.current,
+        {
+            opacity : 0,
+            x : "-100%"
+        },
+        {
+            opacity :1,
+            x : "0%",
+            duration : 2
+        }
+    )
+// }
+// condition = false
+}
+const triggerAnimation2nd = ( ) => {
+    // if(condition){
+        gsap.fromTo(
+            phase2.current,
+            {
+            opacity : 0,
+            x : "100%"
+        },
+        {
+            opacity :1,
+            x : "0%",
+            duration : 2
+        }
+    )
+// }
+// condition = false
+}
+const triggerAnimation3rd = ( ) => {
+    // if(condition){
+        gsap.fromTo(
+        phase3.current,
+        {
+            opacity : 0,
+            x : "-100%"
+        },
+        {
+            opacity :1,
+            x : "0%",
+            duration : 2
+        }
+    )
+// }
+// condition = false
+}
+const triggerAnimation4th = ( ) => {
+// if(condition){
+    gsap.fromTo(
+        phase4.current,
+        {
+            opacity : 0,
+            x : "100%"
+        },
+        {
+            opacity :1,
+            x : "0%",
+            duration : 2
+        }
+    )
+// }
+// condition = false
+}
+
+
+
     return <>
     <Box  component="section" className="roadmap-section">
 
@@ -76,7 +158,9 @@ game gem coin ROADMAP
 
 <Box className="roadmap-content">
 
-    <Box className="roadmap-content-block content-block-1st" sx={{
+    <Box onMouseEnter={triggerAnimation1st} 
+
+    ref={phase1} className="roadmap-content-block content-block-1st" sx={{
         '@media (max-width : 650px)':{
             padding : "0 0 30px 30px"
         },
@@ -122,7 +206,7 @@ game gem coin ROADMAP
         </Box>
         </Box>
 
-        <Box className="roadmap-content-block content-block-2nd" sx={{
+        <Box ref={phase2} onMouseEnter={triggerAnimation2nd} className="roadmap-content-block content-block-2nd" sx={{
                     '@media (max-width : 650px)':{
                         padding : "0 30px 30px 0"
                     },
@@ -173,7 +257,7 @@ game gem coin ROADMAP
         </Box>
         </Box>
 
-        <Box className="roadmap-content-block content-block-3rd" sx={{
+        <Box ref={phase3} onMouseEnter={triggerAnimation3rd} className="roadmap-content-block content-block-3rd" sx={{
                     '@media (max-width : 650px)':{
                         padding : "0 0 30px 30px"
                     }
@@ -218,7 +302,7 @@ game gem coin ROADMAP
         </Box>
         </Box>
 
-        <Box className="roadmap-content-block content-block-4th"sx={{
+        <Box ref={phase4} onMouseEnter={triggerAnimation4th} className="roadmap-content-block content-block-4th"sx={{
                     '@media (max-width : 650px)':{
                         padding : "0 30px 30px 0"
                     }

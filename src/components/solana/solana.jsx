@@ -7,17 +7,21 @@ import "./solana.css"
 
 export default function SolanaDay () {
     return <>
+    <Box component="section" className="solana-section" sx={{
+        padding : "100px 0"
+    }}>
+
     <Container>
         <Box sx={{display : "flex" , justifyContent : "center"}}>
             <Box sx={{
                 width : "100%",
                 backgroundImage : "linear-gradient(#80D4FF, rgba(3, 65, 97, 0.6))" ,
                     padding :"50px",
-                        display : "flex",
-                        flexDirection : "column" ,
-                        gap : "25px",
-                        position : "relative",
-                        '&:before': {
+                    display : "flex",
+                    flexDirection : "column" ,
+                    gap : "25px",
+                    position : "relative",
+                    '&:before': {
                             content: '""',  
                             backgroundImage : `url(${bckTree})`,
                             backgroundSize : "cover",
@@ -276,5 +280,6 @@ export default function SolanaDay () {
             </Box>
         </Box>
     </Container>
+        </Box>
     </>
 }

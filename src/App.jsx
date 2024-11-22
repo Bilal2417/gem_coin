@@ -8,6 +8,7 @@ import Roadmap from './components/roadmap/roadmap'
 import Faq from './components/faq/faq'
 import Footer from './components/footer/footer'
 import Referral from './components/referral/referral'
+import SolanaDay from './components/solana/solana'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <GemMain/>
 <AboutUs/>
 <HowToBuy/>
+<SolanaDay/>
 <Referral/>
 <Tokenomics/>
 <Roadmap/>
