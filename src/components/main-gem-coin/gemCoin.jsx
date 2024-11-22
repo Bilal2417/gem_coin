@@ -100,11 +100,12 @@ const headerEl = document.querySelector(".hide");
                   "@media (max-width : 1000px )":{
                     width : "60%",
                  gap : "15px"
-                  },
-                  "@media (max-width : 899.70px )":{
+                },
+                "@media (max-width : 899.70px )":{
+                    gap : "25px",
                  boxShadow : "none",
                   flexDirection : "column",
-                  fontSize : "1.2em",
+                  fontSize : "1.4em",
                   border : "none"
               }}}
               >
