@@ -31,6 +31,9 @@ export default function SolanaDay () {
                             zIndex : "1",              
                             opacity: "0.4"
                         },
+                        "@media (max-width : 750px )":{
+                           '&:before':{display : "none"}
+                        },
                         "@media (max-width : 450px )":{
                             padding :"50px 20px",
                         }
