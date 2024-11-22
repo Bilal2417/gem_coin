@@ -2,6 +2,7 @@ import { Container , Box , Button, Typography , Grid, Input } from "@mui/materia
 import barImg from "../../images/game-gem-coin-img.png"
 import solanaLogo from "../../images/solanaLogo.png"
 import bckTree from "../../images/heroTree.png"
+import brdImg from "../../images/borderImg.png"
 import "./solana.css"
 
 export default function SolanaDay () {
@@ -17,7 +18,7 @@ export default function SolanaDay () {
                         gap : "25px",
                         position : "relative",
                         '&:before': {
-                            // content: '""',  
+                            content: '""',  
                             backgroundImage : `url(${bckTree})`,
                             backgroundSize : "cover",
                             position : "absolute",

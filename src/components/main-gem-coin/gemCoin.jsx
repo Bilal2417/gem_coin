@@ -72,7 +72,7 @@ const headerEl = document.querySelector(".hide");
           <Box  className="main-nav" sx={{ color: '#fff', fontFamily: '"Marcellus SC", serif', fontWeight: 400,  display: "flex" ,
             alignItems:" center",
             justifyContent : "space-between",
-            width : "100%",  marginLeft : "-50px" ,    
+            marginLeft : "-50px" ,    
                   // "@media (max-width : 1200px )":{
                   //   width : "60%",
                   //   marginLeft : "-35px"
@@ -80,6 +80,7 @@ const headerEl = document.querySelector(".hide");
                   "@media (max-width : 899.70px )":{
                   flexDirection: 'column',
                   justifyContent: 'center',
+                  marginLeft : "0"
                }
                   }}>
             <Box className="bck-img"
@@ -102,11 +103,19 @@ const headerEl = document.querySelector(".hide");
                  gap : "15px"
                 },
                 "@media (max-width : 899.70px )":{
-                    gap : "25px",
+                    gap : "20px",
                  boxShadow : "none",
                   flexDirection : "column",
-                  fontSize : "1.4em",
+                  fontSize : "1.3em",
                   border : "none"
+                },
+                "@media (max-width : 400px )":{
+                    gap : "15px",
+                  fontSize : "1.2em",
+                },
+                "@media (max-width : 350px )":{
+                    gap : "10px",
+                  fontSize : "1em",
               }}}
               >
               <Box component="li" sx={{ textTransform: 'uppercase' }}>
