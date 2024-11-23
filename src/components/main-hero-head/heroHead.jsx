@@ -3,9 +3,9 @@ import { Button, Container, Box, Typography, Grid } from '@mui/material';
 import headerLogo from "../../images/game-gem-coin-img.png";
 import mainBackImg from "../../images/main-back-img.png";
 import heroBtn from "../../images/hero-btn.png"
-import MainContent from '../main_gem-content/mainContent';
+import MainContent from '../main-hero/mainContent';
 import { ViewHeadline } from '@mui/icons-material';
-import "./gemCoin.css"
+import "./heroHead.css"
 
 export default function GemMain  ()  {
 
@@ -169,7 +169,7 @@ const headerEl = document.querySelector(".hide");
                   Roadmap
                 </Typography>
               </Box>
-              <Box component="li" sx={{ textTransform: 'uppercase' }}>
+              <Box component="li" sx={{ textTransform: 'uppercase' ,zIndex : "2"}}>
                 <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' ,fontFamily: "Marcellus SC"
                                       ,      "&:hover": {
                                         textDecoration: "underLine",  
@@ -185,7 +185,7 @@ const headerEl = document.querySelector(".hide");
                   Team
                 </Typography>
               </Box>
-              <Box component="li" sx={{ textTransform: 'uppercase' }}>
+              <Box component="li" sx={{ textTransform: 'uppercase',zIndex : "2" }}>
                 <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' ,fontFamily: "Marcellus SC"
                                       ,      "&:hover": {
                                         textDecoration: "underLine",  
@@ -201,7 +201,7 @@ const headerEl = document.querySelector(".hide");
                   Presale
                 </Typography>
               </Box>
-              <Box component="li">
+              <Box component="li" sx={{ textTransform: 'uppercase',zIndex : "2" }}>
                 <Typography variant="body1" component="a" href="#" sx={{ color: '#fff', textDecoration: 'none' 
                                       ,      "&:hover": {
                                         textDecoration: "underLine", 

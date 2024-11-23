@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import GemMain from './components/main-gem-coin/gemCoin'
+import GemMain from './components/main-hero-head/heroHead'
 import AboutUs from './components/aboutUs/aboutUs'
 import HowToBuy from './components/toBuy/toBuy'
 import Tokenomics from './components/tokenomics/tokenomics'
@@ -12,7 +12,6 @@ import SolanaDay from './components/solana/solana'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
