@@ -6,13 +6,12 @@ import crypto from "../../images/cryptoImg.png";
 import newsBtc from "../../images/btcImg.png";
 import aboutImg from "../../images/usingPad.png";
 import Marquee from "react-fast-marquee";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
 import "./aboutUs.css";
 
 export default function AboutUs() {
   const aboutImgAni = useRef(null);
-  const [hasAnimated, setHasAnimated] = useState(false);
 
   const startAnimation = () => {
     // if (!hasAnimated) {

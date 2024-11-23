@@ -134,9 +134,11 @@ export default function Footer() {
                       alignItems: "center",
                       justifyContent: "center",
                       borderRadius: "12px",
+                      width : "50px",
+                      height: "50px",
                     }}
                   >
-                    <img src={twitter}></img>
+                    <img style={{width : "50%"}} src={twitter}></img>
                   </Box>
                 </Grid>
                 <Grid
@@ -155,9 +157,11 @@ export default function Footer() {
                       alignItems: "center",
                       justifyContent: "center",
                       borderRadius: "12px",
+                      width : "50px",
+                      height: "50px",
                     }}
                   >
-                    <img src={facebook}></img>
+                    <img style={{width : "50%"}} src={facebook}></img>
                   </Box>
                 </Grid>
                 <Grid
@@ -176,9 +180,11 @@ export default function Footer() {
                       alignItems: "center",
                       justifyContent: "center",
                       borderRadius: "12px",
+                      width : "50px",
+                      height: "50px",
                     }}
                   >
-                    <img src={plane}></img>
+                    <img style={{width : "50%"}} src={plane}></img>
                   </Box>
                 </Grid>
                 <Grid
@@ -197,9 +203,11 @@ export default function Footer() {
                       alignItems: "center",
                       justifyContent: "center",
                       borderRadius: "12px",
+                      width : "50px",
+                      height: "50px",
                     }}
                   >
-                    <img src={youTube}></img>
+                    <img style={{width : "50%"}} src={youTube}></img>
                   </Box>
                 </Grid>
                 <Grid
@@ -218,9 +226,11 @@ export default function Footer() {
                       alignItems: "center",
                       justifyContent: "center",
                       borderRadius: "12px",
+                      width : "50px",
+                      height: "50px",
                     }}
                   >
-                    <img src={tiktok}></img>
+                    <img style={{width : "50%"}} src={tiktok}></img>
                   </Box>
                 </Grid>
                 <Grid
@@ -239,9 +249,11 @@ export default function Footer() {
                       alignItems: "center",
                       justifyContent: "center",
                       borderRadius: "12px",
+                      width : "50px",
+                      height: "50px",
                     }}
                   >
-                    <img src={discord}></img>
+                    <img style={{width : "50%"}} src={discord}></img>
                   </Box>
                 </Grid>
               </Grid>
