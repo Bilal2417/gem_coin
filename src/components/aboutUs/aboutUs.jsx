@@ -21,16 +21,16 @@ const startAnimation = () => {
         gsap.fromTo(
             aboutImgAni.current,
             {
-              scale: 1.5,      // Starting scale
-              opacity: 1,    // Starting opacity
+              scale: 1.5,    
+              opacity: 1,    
             },
 
                 {
-                    scale: 1.4,    // Animate to this scale
-                    opacity: 0.9,  // Animate to this opacity
+                    scale: 1.4,    
+                    opacity: 0.9, 
                     duration: 1,
-                    yoyo: true,    // Makes the animation reverse (bounce effect)
-                    repeat: -1,    // Repeat indefinitely
+                    yoyo: true,   
+                    repeat: -1,    
                     ease: "power2.out",
                 }
             );
@@ -39,23 +39,21 @@ const startAnimation = () => {
             gsap.fromTo(
                 aboutImgAni.current,
                 {
-                  scale: 1,      // Starting scale
-                  opacity: 1,    // Starting opacity
+                  scale: 1,     
+                  opacity: 1,    
                 },
     
                     {
-                        scale: 1.1,    // Animate to this scale
-                        opacity: 0.9,  // Animate to this opacity
+                        scale: 1.1,    
+                        opacity: 0.9, 
                         duration: 1,
-                        yoyo: true,    // Makes the animation reverse (bounce effect)
-                        repeat: -1,    // Repeat indefinitely
+                        yoyo: true,    
+                        repeat: -1,    
                         ease: "power2.out",
                     }
                 );
 
         }
-    // setHasAnimated(true);
-// }
 }
 const endAnimation =() => {
     gsap.killTweensOf(aboutImgAni.current);
@@ -64,16 +62,16 @@ const endAnimation =() => {
         gsap.fromTo(
             aboutImgAni.current,
             {
-                scale: aboutImgAni.current.scale || 1.4,    // Start from the current scale (1.4 after hover)
-                opacity: aboutImgAni.current.opacity || 0.9,  // Start from the current opacity (0.9 after hover)
+                scale: aboutImgAni.current.scale || 1.4,   
+                opacity: aboutImgAni.current.opacity || 0.9,  
             },
         {
-            scale: 1.5,      // Animate back to original scale
-            opacity: 1,    // Animate back to original opacity
-            duration: 0.3, // Reset duration (quick reset)
+            scale: 1.5,    
+            opacity: 1,   
+            duration: 0.3, 
             ease: "power2.out",
-            repeat: 0,     // No repeat after reset
-            yoyo: false,   // No bounce effect
+            repeat: 0,     
+            yoyo: false,
         }
     );
 }
@@ -81,16 +79,16 @@ else{
     gsap.fromTo(
         aboutImgAni.current,
         {
-            scale: aboutImgAni.current.scale,    // Start from the current scale (1.4 after hover)
-            opacity: aboutImgAni.current.opacity || 0.9,  // Start from the current opacity (0.9 after hover)
+            scale: aboutImgAni.current.scale, 
+            opacity: aboutImgAni.current.opacity || 0.9,  
         },
     {
-        scale: 1,      // Animate back to original scale
-        opacity: 1,    // Animate back to original opacity
-        duration: 0.3, // Reset duration (quick reset)
+        scale: 1,      
+        opacity: 1,   
+        duration: 0.3, 
         ease: "power2.out",
-        repeat: 0,     // No repeat after reset
-        yoyo: false,   // No bounce effect
+        repeat: 0,    
+        yoyo: false,   
     }
     );
 
@@ -181,12 +179,23 @@ else{
                 >
                     <Container>
 
-                        <Grid  container spacing={2} alignItems="center">
+                        <Grid  
+                        container spacing={2} alignItems="center"                     
+                           sx={{"@media (max-width : 650px )" :{
+                            justifyContent : "center"
+                        }}}>
                             <Grid  item xs={12} sm={6}
                                 className="about-img-block"
                                 sx={{ display: 'flex', justifyContent: 'flex-start', width: '45%', }}
                                 >
-                                <img ref={aboutImgAni} src={aboutImg} alt="about us" style={{ width: '75%', transform: 'scale(1.5)' }} />
+                                <img ref={aboutImgAni} src={aboutImg} alt="about us" style={{ width : "80%",
+                                    '@media (min-width : 650px )':{
+                                        transform: 'scale(1.5)',
+                                    },
+                                    '@media (max-width : 650px )':{
+                                           width: '90%', 
+                                    }
+                                 }} />
                             </Grid>
 
                             <Grid  item xs={12} sm={6}

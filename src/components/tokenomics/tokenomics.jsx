@@ -12,7 +12,7 @@ export default function Tokenomics () {
 
 const startAnimation = () => {
     gsap.to(sectionRef.current, {
-        scale: 1.1, // Zoom in
+        scale: 1.1, 
         duration: 0.5,
         ease: "power2.out",
       });
@@ -20,7 +20,7 @@ const startAnimation = () => {
 
 const endAnimation = () => {
     gsap.to(sectionRef.current, {
-      scale: 1, // Back to original size
+      scale: 1, 
       duration: 0.5,
       ease: "power2.out",
     });

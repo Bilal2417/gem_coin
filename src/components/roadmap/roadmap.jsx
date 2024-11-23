@@ -12,10 +12,10 @@ const ufoRef = useRef(null);
 
 const triggerAnimation = (index) => {
     gsap.to(phaseRef.current[index], {
-      scale: 1.1, // Slightly scale up
-      rotationY: 15, // Apply a slight 3D rotation on Y-axis
-      x: 20, // Slightly slide to the right
-      duration: 0.5, // Duration of the animation
+      scale: 1.1,
+      rotationY: 15, 
+      x: 20, 
+      duration: 0.5, 
       ease: "power2.out",
     });
   };
@@ -23,10 +23,10 @@ const triggerAnimation = (index) => {
 
   const handleMouseLeave = (index) => {
     gsap.to(phaseRef.current[index], {
-      scale: 1, // Return to original scale
-      rotationY: 0, // Reset rotation
-      x: 0, // Reset horizontal position
-      duration: 0.5, // Duration of the reset animation
+      scale: 1,
+      rotationY: 0,
+      x: 0,
+      duration: 0.5,
       ease: "power2.inOut",
     });
   };
@@ -36,22 +36,21 @@ const triggerAnimation = (index) => {
     gsap.fromTo(
         ufoRef.current,
         {
-          x: -200,          // Start at the left side of the screen
-          y: -50,          // Start in the center vertically (relative to the container)
-          scale: 1,       // Original size
-          opacity: 1,     // Full opacity initially
+          x: -200,        
+          y: -50,   
+          scale: 1,       
         },
         {
-          x: 200,        // Move horizontally to 500px to the right
-          y: 50,         // Move vertically to simulate floating (up to 50px)
-          scale: 1.2,    // Slightly scale up
-          opacity: 1,    // Full opacity
-          duration: 2,   // Total duration of animation
-          ease: "power1.inOut",  // Ease for smooth, natural movement
-          repeat: -1,    // Repeat indefinitely
-          yoyo: true,    // Yoyo effect (returns to the original state)
-          repeatDelay: 0,  // Delay before repeating the animation
-          stagger: 0.3,  // Stagger the animation slightly for multiple UFOs (if applicable)
+          x: 200,        
+          y: 50,       
+          scale: 1.2,   
+          opacity: 1,        
+            duration: 2,  
+          ease: "power1.inOut",  
+          repeat: -1,   
+          yoyo: true,   
+          repeatDelay: 0, 
+          stagger: 0.3,  
         }
       );
     }
@@ -59,22 +58,22 @@ const triggerAnimation = (index) => {
         gsap.fromTo(
             ufoRef.current,
             {
-              x: -200,          // Start at the left side of the screen
-              y: 0,          // Start in the center vertically (relative to the container)
-              scale: 1,       // Original size
-              opacity: 1,     // Full opacity initially
+              x: -200,    
+              y: 0,       
+              scale: 1,      
+              opacity: 1,    
             },
             {
-              x: 200,        // Move horizontally to 500px to the right
-              y: 0,         // Move vertically to simulate floating (up to 50px)
-              scale: 1.2,    // Slightly scale up
-              opacity: 1,    // Full opacity
-              duration: 2,   // Total duration of animation
-              ease: "power1.inOut",  // Ease for smooth, natural movement
-              repeat: -1,    // Repeat indefinitely
-              yoyo: true,    // Yoyo effect (returns to the original state)
-              repeatDelay: 0,  // Delay before repeating the animation
-              stagger: 0.3,  // Stagger the animation slightly for multiple UFOs (if applicable)
+              x: 200,      
+              y: 0,       
+              scale: 1.2,    
+              opacity: 1,   
+              duration: 2,  
+              ease: "power1.inOut", 
+              repeat: -1,   
+              yoyo: true,    
+              repeatDelay: 0, 
+              stagger: 0.3,
             }
           );
     }
@@ -85,11 +84,11 @@ const triggerAnimation = (index) => {
     if (window.innerWidth > 800) {
     gsap.killTweensOf(ufoRef.current);
     gsap.to(ufoRef.current, {
-        scale: 1,        // Reset to original size
-        x: 0,            // Reset position to the center
-        rotation: 0,     // Reset rotation
-        duration: 0.4,   // Quick reset
-        ease: "power2.out", // Smooth reset easing
+        scale: 1,       
+        x: 0,           
+        rotation: 0,     
+        duration: 0.4,   
+        ease: "power2.out", 
       });
   };
 }

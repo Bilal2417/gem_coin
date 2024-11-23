@@ -14,7 +14,7 @@ export default function Footer () {
 
 
     return <>
-    <Box sx={{
+    <Box component="footer" sx={{
         backgroundImage :  `url(${footerImg})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
