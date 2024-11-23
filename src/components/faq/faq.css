@@ -1,27 +1,26 @@
-#faq-section{
-background-image: url("../../images/footerImg.png");
-background-size: cover;
-background-repeat: no-repeat;
-padding: 100px 0;
-background-color: #000000;
+#faq-section {
+  background-image: url("../../images/footerImg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  background-color: #000000;
 }
-.fnt-sml{
-    
-    font-size: 3.8em;
+.fnt-sml {
+  font-size: 3.8em;
 }
 .section-lineLeft,
-.section-line{
- width: 300px;
- height: 1px;
+.section-line {
+  width: 300px;
+  height: 1px;
 }
-.section-lineLeft{
- background-image: linear-gradient(to left ,#28D5FF , #000000);
+.section-lineLeft {
+  background-image: linear-gradient(to left, #28d5ff, #000000);
 }
-.section-line{
- background-image: linear-gradient(to right ,#28D5FF , #000000);
+.section-line {
+  background-image: linear-gradient(to right, #28d5ff, #000000);
 }
-@media ( max-width : 500px){
-    #faq-section{
-        padding: 0px 0 50px;
-    }
+@media (max-width: 500px) {
+  #faq-section {
+    padding: 0px 0 50px;
+  }
 }

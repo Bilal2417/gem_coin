@@ -8,47 +8,46 @@
     justify-content: center;
 }*/
 .tokenChartBlock,
-.tokenImgBlock{
-    max-width: 50%;
-} 
-.tokenImgBlock{
-    position: relative;
+.tokenImgBlock {
+  max-width: 50%;
 }
-.tokenChartBlock img{
-    width: 100%;
+.tokenImgBlock {
+  position: relative;
 }
-.tokenImgBlock:before{
-    content: "";
-    background-image: url("../../images/token-bck-tree.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    left: 0%;
-    top: 0px;
+.tokenChartBlock img {
+  width: 100%;
 }
-.tokenImgBlock img{
-    position: relative;
-    width: 100%;
+.tokenImgBlock:before {
+  content: "";
+  background-image: url("../../images/token-bck-tree.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  left: 0%;
+  top: 0px;
 }
-
+.tokenImgBlock img {
+  position: relative;
+  width: 100%;
+}
 
 /* MEDIA QUERIES///////////////////// */
-@media ( max-width : 900px ){
-    .tokenChartBlock img{
-        width: 50%;
-    }
-    .tokenImgBlock img{
-        width: 70%;
-    }
-    .tokenImgBlock::before{
-        left: auto;
-        width: 300px;
-    }
+@media (max-width: 900px) {
+  .tokenChartBlock img {
+    width: 50%;
+  }
+  .tokenImgBlock img {
+    width: 70%;
+  }
+  .tokenImgBlock::before {
+    left: auto;
+    width: 300px;
+  }
 }
-@media ( max-width : 450px ){
-.tokenImgBlock::before {
+@media (max-width: 450px) {
+  .tokenImgBlock::before {
     width: 200px;
-}
+  }
 }

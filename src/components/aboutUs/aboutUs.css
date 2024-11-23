@@ -2,153 +2,150 @@
 .buy-section,
 .token-block,
 .roadmap-section,
-.solana-section{
-    background-image: url("../../images/starsBckImg.png");
-    background-size: contain;
-    background-repeat: repeat;
-    background-color: black;
+.solana-section {
+  background-image: url("../../images/starsBckImg.png");
+  background-size: contain;
+  background-repeat: repeat;
+  background-color: black;
 }
-.featured-block{
-padding: 50px 0;
-} 
-.section-head{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 40px 0;
+.featured-block {
+  padding: 50px 0;
 }
-.secondary-heading-block h2{
-    font-family: "Metal Mania", system-ui;
-    font-size: 4.2em;
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px 0;
+}
+.secondary-heading-block h2 {
+  font-family: "Metal Mania", system-ui;
+  font-size: 4.2em;
 }
 
 .section-lft-line,
-.section-rgt-line{
- width: 400px;
- height: 1px;
+.section-rgt-line {
+  width: 400px;
+  height: 1px;
 }
-.section-lft-line{
- background-image: linear-gradient(to left ,#28D5FF , #000000);
+.section-lft-line {
+  background-image: linear-gradient(to left, #28d5ff, #000000);
 }
-.section-rgt-line{
- background-image: linear-gradient(to right ,#28D5FF , #000000);
+.section-rgt-line {
+  background-image: linear-gradient(to right, #28d5ff, #000000);
 }
-.heading-grd{
-    color: transparent;
-    background-image: linear-gradient(#BBE8FF , #0E5F88);
-    background-clip: text;
+.heading-grd {
+  color: transparent;
+  background-image: linear-gradient(#bbe8ff, #0e5f88);
+  background-clip: text;
 }
-.featured-logo-list{
-    display: flex;
-    gap: 25px;
+.featured-logo-list {
+  display: flex;
+  gap: 25px;
 }
 .featured-logo-list-item img {
-    filter: grayscale(100%)  invert(70%);
-    width: 85%;
+  filter: grayscale(100%) invert(70%);
+  width: 85%;
 }
 .about-img-block img {
-    width: 75%;
-    transform: scale(1.5);
+  width: 75%;
+  transform: scale(1.5);
 }
-.about-content-block{
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    color: #fff;
-    gap: 30px;
+.about-content-block {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #fff;
+  gap: 30px;
 }
-.tertiary-head-block{
-    background-image: linear-gradient(to right,#6bc8f7 , #000000);
-    opacity: 0.8;
-    text-align: left;
+.tertiary-head-block {
+  background-image: linear-gradient(to right, #6bc8f7, #000000);
+  opacity: 0.8;
+  text-align: left;
 }
-.tertiary-heading{
-    font-family: "Metal Mania", system-ui;
-    font-size: 4.2em;
-    padding: 10px 35px;
-    color: #fff;
-    text-transform: uppercase;
+.tertiary-heading {
+  font-family: "Metal Mania", system-ui;
+  font-size: 4.2em;
+  padding: 10px 35px;
+  color: #fff;
+  text-transform: uppercase;
 }
-.tertiary-text{
-    text-align: left;
-    color: #fff;
-    opacity: 0.9;
+.tertiary-text {
+  text-align: left;
+  color: #fff;
+  opacity: 0.9;
 }
 
-.about-flex-block{
-    position: relative;
+.about-flex-block {
+  position: relative;
 }
 
 .about-area::before,
-.about-area::after{
-    position: absolute;
-    content: "";
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 220px;
-    left: 0;
+.about-area::after {
+  position: absolute;
+  content: "";
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 220px;
+  left: 0;
 }
-.about-area::before{
-    bottom: 100%;
-    background-image: url("../../images/about_upper.png");
+.about-area::before {
+  bottom: 100%;
+  background-image: url("../../images/about_upper.png");
 }
-.about-area::after{
-   top: 100%;
-    background-image: url("../../images/about_upper.png");
-    transform: rotateX(180deg);
-
+.about-area::after {
+  top: 100%;
+  background-image: url("../../images/about_upper.png");
+  transform: rotateX(180deg);
 }
-
-
 
 /* MEDIA QUERIES//////////////////////////// */
-@media(max-width :1175px){
-    .about-area::before,
-    .about-area::after{
-        background-size: contain;
-        height: 200px;
-    }
+@media (max-width: 1175px) {
+  .about-area::before,
+  .about-area::after {
+    background-size: contain;
+    height: 200px;
+  }
 }
-@media(max-width :950px){
-    .about-area::before,
-    .about-area::after{
-        background-size: contain;
-        height: 165px;
-    }
+@media (max-width: 950px) {
+  .about-area::before,
+  .about-area::after {
+    background-size: contain;
+    height: 165px;
+  }
 }
-@media(max-width :760px){
-    /* .about-area::after{
+@media (max-width: 760px) {
+  /* .about-area::after{
         height: 100px;
         } */
-        .featured-logo-list {
-            gap: 0px;
-        }
-        .featured-logo-list-item img {
-            width: 70%;
-        }
-    } 
-    @media(max-width : 600px ) {
-        .about-img-block img{
-            width: 100%;
-             transform: scale(1);
-        }
-        .about-area::before,
-        .about-area::after{
-            height: 100px;
-        }
-    }
-@media(max-width :450px){
-    /* .about-area::before{
+  .featured-logo-list {
+    gap: 0px;
+  }
+  .featured-logo-list-item img {
+    width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  .about-img-block img {
+    width: 100%;
+    transform: scale(1);
+  }
+  .about-area::before,
+  .about-area::after {
+    height: 100px;
+  }
+}
+@media (max-width: 450px) {
+  /* .about-area::before{
         height: 50px;
     } */
-        .featured-logo-list-item img {
-            width: 60%;
-        }
+  .featured-logo-list-item img {
+    width: 60%;
+  }
 }
 @media (max-width: 400px) {
-    /* .about-area::after {
+  /* .about-area::after {
         height: 70px;
     } */
 }

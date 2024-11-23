@@ -1,207 +1,228 @@
 .roadmap-section {
-    padding: 50px 0;
+  padding: 50px 0;
 }
-.roadmap-content{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    padding: 50px 0;
+.roadmap-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 0;
 }
-.roadmap-content-block{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.roadmap-content-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.content-block-1st{
-    border-left: 2px solid transparent;
-    border-bottom: 2px solid transparent;
-    border-image: linear-gradient(to right , #074B9E , #5BF8FF) 1;
-    padding: 0 0 60px 60px;
-    position: relative;
+.content-block-1st {
+  border-left: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, #074b9e, #5bf8ff) 1;
+  padding: 0 0 60px 60px;
+  position: relative;
 }
-.content-block-3rd{
-    padding: 0 0 60px 60px;
-    position: relative;
-
+.content-block-3rd {
+  padding: 0 0 60px 60px;
+  position: relative;
 }
-.content-block-1st::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -25px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-image: linear-gradient(to right , #074B9E , #5BF8FF);
+.content-block-1st::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #074b9e, #5bf8ff);
 }
-.content-block-1st::after{
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 50px;
-    right: 0;
-    bottom: -50px;
-    background-color: #5BF8FF;
+.content-block-1st::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  right: 0;
+  bottom: -50px;
+  background-color: #5bf8ff;
 }
 .content-block-2nd,
-.content-block-3rd{
-border-bottom: 1px solid transparent;
-border-image: repeating-linear-gradient(to right, #074B9E 0% 1%, /*  */ transparent 1% 2%, /*  */ #5BF8FF 2% 3%, /*  */ transparent 3% 4%) 1 stretch;
+.content-block-3rd {
+  border-bottom: 1px solid transparent;
+  border-image: repeating-linear-gradient(
+      to right,
+      #074b9e 0% 1%,
+      /*  */ transparent 1% 2%,
+      /*  */ #5bf8ff 2% 3%,
+      /*  */ transparent 3% 4%
+    )
+    1 stretch;
 }
-.bfr-line{
-    position: relative;
+.bfr-line {
+  position: relative;
 }
-.bfr-line::before{
-    content: "";
-    top: 50%;
-    left: -30px;
-    height: 2px;
-    background-image: linear-gradient(to right , #074B9E , #5BF8FF);
-    width: 30px;
-    position: absolute;
+.bfr-line::before {
+  content: "";
+  top: 50%;
+  left: -30px;
+  height: 2px;
+  background-image: linear-gradient(to right, #074b9e, #5bf8ff);
+  width: 30px;
+  position: absolute;
 }
-.content-block-3rd::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -25px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 3px solid #5BF8FF;
-    background-color: #074B9E;
+.content-block-3rd::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #5bf8ff;
+  background-color: #074b9e;
 }
-.content-block-3rd::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 1px;
-    height: 50%;
-    background: repeating-linear-gradient(
-        to bottom, 
-        #074B9E 0% 8%, 
-        transparent 8% 12%, 
-        #5BF8FF 12% 20%, 
-        transparent 20% 24% 
-      ) ;
+.content-block-3rd::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 50%;
+  background: repeating-linear-gradient(
+    to bottom,
+    #074b9e 0% 8%,
+    transparent 8% 12%,
+    #5bf8ff 12% 20%,
+    transparent 20% 24%
+  );
 }
-.roadmap-head-block{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.roadmap-head-block {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 .tertiary-heading-block,
-.roadmap-style-block{
-    width: 60%;
-    text-align: left;
-    background-image: linear-gradient(to right ,#074B9E , #5BF8FF);
+.roadmap-style-block {
+  width: 60%;
+  text-align: left;
+  background-image: linear-gradient(to right, #074b9e, #5bf8ff);
 }
-.roadmap-style-block{
-    height: 10px;
+.roadmap-style-block {
+  height: 10px;
 }
-.sml-font{
-    font-size: 1.5em;
-    padding: 4px 36px;
+.sml-font {
+  font-size: 1.5em;
+  padding: 4px 36px;
 }
-.tertiary-text-block{
-    width: 100%;
-    background-color: #091919;
-    opacity: 0.8;
-    position: relative;
+.tertiary-text-block {
+  width: 100%;
+  background-color: #091919;
+  opacity: 0.8;
+  position: relative;
 }
 .tertiary-text-block::before,
 .tertiary-text-block::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-color: transparent;
-    border-style: solid;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-color: transparent;
+  border-style: solid;
 }
 
 .tertiary-text-block::before {
-    border-width: 1.5em;
-    border-right-color: #000000;
-    border-top-color: #000000;
+  border-width: 1.5em;
+  border-right-color: #000000;
+  border-top-color: #000000;
 }
 
 .tertiary-text-block::after {
-    border-radius: 0.4em;
-    border-width: 1.35em;
-    border-right-color: #000000;
-    border-top-color: #000000;
+  border-radius: 0.4em;
+  border-width: 1.35em;
+  border-right-color: #000000;
+  border-top-color: #000000;
 }
-.txt-fnt{
-    font-family: "Inter", sans-serif;
-    padding: 30px 0 30px 60px;
-    width: 90%;
-    line-height: 28px;
+.txt-fnt {
+  font-family: "Inter", sans-serif;
+  padding: 30px 0 30px 60px;
+  width: 90%;
+  line-height: 28px;
 }
-.mrg-lft{
-    margin-left: 80px;
+.mrg-lft {
+  margin-left: 80px;
 }
 /* 2nd block////////////////////////////////////////// */
 
 .content-block-2nd,
-.content-block-4th{
-    position: relative;
-    padding: 0 60px 50px 0;
+.content-block-4th {
+  position: relative;
+  padding: 0 60px 50px 0;
 }
-.content-block-4th{
-    border-bottom: 1px solid transparent;
-    width: 100%;
-    border-image: repeating-linear-gradient(to right, #074B9E 0% 1%, /* */ transparent 1% 2%, /**/ #5BF8FF 2% 3%, /*  */ transparent 3% 4%) 1 stretch;
+.content-block-4th {
+  border-bottom: 1px solid transparent;
+  width: 100%;
+  border-image: repeating-linear-gradient(
+      to right,
+      #074b9e 0% 1%,
+      /* */ transparent 1% 2%,
+      /**/ #5bf8ff 2% 3%,
+      /*  */ transparent 3% 4%
+    )
+    1 stretch;
 }
-.content-block-4th::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -25px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 3px solid #5BF8FF;
-    background-color: #074B9E;
+.content-block-4th::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #5bf8ff;
+  background-color: #074b9e;
 }
 .content-block-2nd::after,
-.content-block-4th:after{
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 1px; 
-    height: 50%; 
-    background: repeating-linear-gradient(to bottom, 
-    #074B9E 0% 8%,
+.content-block-4th:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 50%;
+  background: repeating-linear-gradient(
+    to bottom,
+    #074b9e 0% 8%,
     transparent 8% 12%,
-    #5BF8FF 12% 20%, 
-    transparent 20% 24%);
+    #5bf8ff 12% 20%,
+    transparent 20% 24%
+  );
 }
-.content-block-5th{
-    position: relative;
+.content-block-5th {
+  position: relative;
 }
-.content-block-5th::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -25px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-image: linear-gradient(to right, #074B9E, #5BF8FF);
+.content-block-5th::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #074b9e, #5bf8ff);
 }
-.content-block-5th::after{
-    content: "";
-    position: absolute;
-    top: -50px;
-    left: 0;
-    width: 3px;
-    height: 50px;
-    background: repeating-linear-gradient(to bottom, #074B9E 0% 8%, /*  */ transparent 8% 12%, /*  */ #5BF8FF 12% 20%, /* */ transparent 20% 24%);
+.content-block-5th::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 3px;
+  height: 50px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #074b9e 0% 8%,
+    /*  */ transparent 8% 12%,
+    /*  */ #5bf8ff 12% 20%,
+    /* */ transparent 20% 24%
+  );
 }
 
-.ufo_img{
-    width: 100%;
-    height: auto;
+.ufo_img {
+  width: 100%;
+  height: auto;
 }

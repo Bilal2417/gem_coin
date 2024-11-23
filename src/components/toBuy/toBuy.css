@@ -1,79 +1,79 @@
-.section-mini-heading{
-    color: #fff;
+.section-mini-heading {
+  color: #fff;
 }
-.buy-content-part{
-    display: flex;
-    justify-content: space-around;
+.buy-content-part {
+  display: flex;
+  justify-content: space-around;
 }
-.buy-content-block{
-    align-items: center;
-    border: 2px solid #80D4FF;
-    position: relative;
-    border-top-left-radius: 40px;
-    border-bottom-right-radius: 50px;
+.buy-content-block {
+  align-items: center;
+  border: 2px solid #80d4ff;
+  position: relative;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 50px;
 }
-.buy-content-block::before{
-    content: "";
-    background-image: url("../../images/about-left-corner.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    width: 50px;
-    height: 50px;
+.buy-content-block::before {
+  content: "";
+  background-image: url("../../images/about-left-corner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 50px;
+  height: 50px;
 }
-.buy-content-block::after{
-    content: "";
-    background-image: url("../../images/about-right-corner.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: -6px;
-    right: -6px;
-    width: 50px;
-    height: 50px;
+.buy-content-block::after {
+  content: "";
+  background-image: url("../../images/about-right-corner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -6px;
+  right: -6px;
+  width: 50px;
+  height: 50px;
 }
-.buy-img-block{
-    width: 120px;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    margin-top: -50px;
-    background-image: linear-gradient(#BBE8FF , #0E5F88);
+.buy-img-block {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  margin-top: -50px;
+  background-image: linear-gradient(#bbe8ff, #0e5f88);
 }
-.buy-img-block img{
-    width: 60%;
+.buy-img-block img {
+  width: 60%;
 }
-.quaternary-heading{
-    font-size: 2.2rem;
-    font-family: "Metal Mania",system-ui;
+.quaternary-heading {
+  font-size: 2.2rem;
+  font-family: "Metal Mania", system-ui;
 }
-.buy-text-block{
-    padding: 15px 0 35px;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.buy-text-block {
+  padding: 15px 0 35px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.buy-text{
-    font-family: "Montserrat";
-    color: #fff;
-    font-size: 0.9em;
+.buy-text {
+  font-family: "Montserrat";
+  color: #fff;
+  font-size: 0.9em;
 }
 /* MEDIA QUERIES//////////////////// */
-@media ( max-width : 700px){
-    .buy-img-block{
-        width: 100px;
-        height : 100px
-    }
+@media (max-width: 700px) {
+  .buy-img-block {
+    width: 100px;
+    height: 100px;
+  }
 }
-@media ( max-width : 550px){
-    .buy-img-block{
-        width: 70px;
-        height : 70px
-    }
+@media (max-width: 550px) {
+  .buy-img-block {
+    width: 70px;
+    height: 70px;
+  }
 }
